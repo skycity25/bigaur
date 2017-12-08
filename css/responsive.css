@@ -1,0 +1,336 @@
+
+/*解析度  767px 以下*/
+@media screen and (max-width:767px) {
+	.neo_phone{ display: block;}
+	.neo_pc{ display: none;}
+
+	/*首頁*/
+
+	body{ padding-top: 50px;}
+	/*主選單*/
+	.navbar-custom{ height: auto; background: #00a0e8; position: fixed; top: 0px;} 
+	.navbar-custom.is-fixed{ height: 50px; min-height: 50px; top: 0px; position: fixed;}
+	.navbar-custom.is-fixed .brand_header{ display: block;}
+	.navbar-custom .main_top{ height: auto; background: #00a0e8;}
+
+	.navbar-custom .main_navigation{ height: auto; top: 50px;} 
+	.navbar-custom .header-top-logo{ margin: 18px 0 0 0; width: 140px;}
+	.navbar-custom .nav > li{ border:none; border-bottom: 1px solid #3fa7e8; margin: 0px; }
+	.navbar-custom .nav > li:last-child{ border:none;}
+	.navbar-collapse .nav li .firstitem{ width: 100%; border:none; left: 0px; top: 42px; display: none;} 
+	.navbar-collapse .nav li .firstitem.hover{ position: static; display: block; }
+	.navbar-collapse .nav .firstitem_ul{ width: 100%;}
+	.navbar-collapse .firstitem_ul > li.active .seconditem{ display: none;}
+	.navbar-custom.is-fixed .main_navigation{ position: absolute; top: 50px;}
+	.navbar-custom.is-fixed .main_navigation .nav-main{ padding: 0px;}
+	.navbar-custom.is-fixed .main_navigation .logo{ display: none;}
+
+	.navbar-custom .nav > li > a{ text-align: left;}
+	.navbar-default .navbar-collapse{ position: relative;}
+	.navbar-default .navbar-collapse ul{margin-top: 62px;}
+
+	.navbar-default .navbar-toggle{ border:none; background:none; width: 38px; height: 38px; padding: 0px; border-radius: 50%; margin: 6px 15px 6px 0; }
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{ background: #0092d7;}
+	.navbar-default .navbar-toggle .icon-bar{ background: #FFF; border-radius:0px; width: 26px; margin: 4px auto;}
+
+	.navbar-collapse .nav_search{ position: absolute; top: 10px; left:0px; padding: 0 20px; margin: 0px; width: 100%;}
+	.navbar-custom.is-fixed .navbar-collapse .nav_search{ width: 100%; }
+	.navbar-collapse .nav_search label{ right:30px;}
+	.navbar-collapse .nav_search .form-control{ width: 100%; background: #2e8ad0; }
+	.navbar-collapse .nav_search .form-control:focus{   width: 100%;}
+
+	.navsign_container{ top: 12px; right: 62px;}
+	.navsign_container li.register{ display: none;}
+	.navsign_container li .text{ display: none;}
+	.navsign_container li.signin{ display: none;}
+	.navsign_container li.member .icon{ background-position:0 -200px; }
+	.navsign_container li.member a:hover .icon,.navsign_container li.member a:focus .icon{background-position: 0px -200px;}
+	.navsign_container li.cart .icon{ background-position:0 -250px; }
+	.navsign_container li.cart a:hover .icon,.navsign_container li.cart a:focus .icon{ background-position: 0px -250px;}
+	.navbar-custom.is-fixed .navsign_container{  position: absolute; }
+	.navbar-custom.is-fixed .navsign_container .cart{ position: static;}
+
+	.navsign_container li.cart .dropdown.open .icon{ background-position: 0px -250px;}
+	.navsign_container li.cart .dropdown{ display: none; }
+	.navsign_container li.sc_link #cartMenu_sm{ display: block;}
+	
+	/*首頁 產品圖*/
+	.home_prodslist .prod_item{ margin-bottom: 30px;}
+	.waterfall li.sm_w1{ width: 50%;}
+	.waterfall li.size_w2.sm_w2{ width: 100%;}
+
+	/*全球地圖*/
+	.global .gl_title{ margin-bottom: 30px;}
+	.global .tit_circle{ width: 100px; height: 100px;}
+	.global .tit_circle h3{ width: 90px; height: 90px ; font-size: 1.3em; padding-top: 28px;}
+	.global .gl_title h4{  padding-left: 110px; padding-top: 30px; font-size: 1.1em;}
+	.global .map{ width: 480px; margin: 0 auto; position: relative;}
+	.global .map ul > li{ background: none; box-shadow: none;}
+	.global .map .text{ display: none;}
+	.global .map .tw { top: 78px; left: 379px;}
+	.global .map .cn { top: 56px; left: 350px;}
+	.global .map .vn { top: 93px; left: 362px;}
+	.global .map .us { top: 51px; left: 48px;}
+
+	/*Footer*/
+	footer .col-si{ width: 50%;}
+	footer .col-si2{ width: 100%;}
+	footer .col-si.last{ width: 100%;}
+	footer .col-si.last .sub_map{ margin: 0 -15px; }
+	footer .col-si.last .sub_map > li{ width: 50%; float: left; padding: 0 15px;}
+
+	/**/
+	.fullwide_banner{ padding: 15px 0;}
+
+	/*BUZZ*/
+	.tab_sele h4{ font-size: 1.2em;}
+
+
+	.story_block .block_text{ position: static;}
+
+
+
+	/**/
+	.reg_box input.form-control[type=text], .reg_box input.form-control[type=email], .reg_box input.form-control[type=password]{ max-width: 100%;}
+	*[class^="col"] .form-control{ margin-bottom: 10px;}
+	*[class^="col"] select.form-control{ margin: 0px;}
+	*[class^="col"] .quantity-number .form-control{ margin: 0px;}
+
+	/**/
+	.product_desc .nav-tabs>li{ width: 33.3333%; }
+	.product_desc .nav-tabs>li>a{ padding: 10px}
+	.products_page .main_commodity{ margin-top: 15px;}
+	.comb_form .spec{ width: 100%;}
+	.comb_form .product_extra .col-md-4{ width: 100%; margin-bottom: 15px;}
+	.plus_purchase .col-item{ width: 50%;}
+	.plus_purchase .col-item.last{ display: none;}
+	.plus_purchase .col-item:nth-child(2)::after{ content: ""; display: block; visibility: hidden; clear: both; }
+
+	/*會員中心*/
+	.mobile.function_category{ display: block;}
+	.mobile.function_category .dropdown-menu{width: 100% ; z-index: 9200;}
+	.dropdown-header{ color: #00a0e8; background: #f2f4f6;}
+
+	/*購物車*/
+	.mailid_check .btn-default{ width: 100%;}
+	.shopcart_row .item.cell-1{ width: 100%;}
+	.shopcart_row .item.cell-2{ width: 100%; }
+	.shopcart_row .item.cell-2 .row > div{ position: relative; }
+	.shopcart_row .item.cell-2 .phone_txt{ display: block; position: absolute; top: 0px; left: 15px; padding-top: 12px; font-weight: 600; }
+	.order-table-info .item p{ padding-left: 70px; text-align: left;}
+	.order-table-info .item .infobox{ padding-left: 0px;}
+	.quantity-number{ width: 150px; margin-left: 70px; margin-top: 10px;}
+	
+	#quanInput{margin-left:0px; width: 100%;}
+	#quanInput .form-control{ margin-bottom: 0px;}
+	.shopcart_row .item.cell-2 .cancel .text-right{ text-align: left; padding-left: 70px;}
+	.shopcart_row .item.cell-2 .cancel .btn{ width: 150px; height: 32px; }
+	.shopcart_row .item.cell-2 .cancel .btn:hover,.shopcart_row .item.cell-2 .cancel .btn:hover{ width: 150px; height: 35px;}
+	.comm_warp .price-total{ padding: 10px;}
+	.discount-no .warp_graybox .disc_item .btn-default{ margin-top: 15px; width: 100%; }
+	.discount-no .warp_graybox .disc_item{ border-left: none;}
+	.discount-no .cupnumber{ padding: 5px 0;}
+	.discount-no .not_use{ display: block;padding: 0px; margin-top: 5px;}
+	.discount-no .warp_graybox .disc_item .control-label{ display: block;}
+	.discount-no.cupsn_done .warp_graybox .disc_item{ padding: 10px;}
+
+	.shopcart_container .shopcart_step{ display: none;}
+
+	#payerform.fixed{ width: 100%;}
+
+	.lay_block .sch_item{ width: 50%;}
+
+	/*會員中心*/
+	.center_box{ width: 100%;}
+	.login_page > .signin_container{ width: 100%;}
+	.login_social .login_fb .fa{ display: none;}
+	.buzz_container .privacy{ padding: 0 15px;} 
+	.login_page > .signin_container .singin_banner{ margin: 0 0 30px 0;}
+	.login_page .signbw{ float: none;}
+	.login_page .box_wrap{ border:1px #ddd solid;}
+	.box_wrap .signin_other .regist{ float: none; margin-bottom: 10px;}
+
+	.phone_form .phone_input1{ width: 30%; }
+	.phone_form .phone_input2{ width: 70%; }
+
+	.phone_form .intl-tel-input{ width: 100%;}
+	.reg_box .getPhoneCode{ max-width: 100%;}
+
+	/*訂單紀錄*/
+	.shopOrder_tab .nav-tabs > li{ width: 33.333%;}
+	.shopOrder_tab .nav-tabs > li > a { padding: 10px 2px; text-align: center;}
+
+	.table-responsive tr{ display: block; border-bottom: 1px solid #ddd;}
+	.table-responsive td,.table-responsive th{ display: block; border:none !important;}
+	.table-responsive .visible-xs-item{ display: inline-block; color: #222; font-weight: 700; padding-right: 10px;}
+
+	.order-table-info .item.cell-1{ width: 100%; float: none;}
+	.order-table-info .item.cell-2{ width: 100%; float: none; min-height: 40px;}
+	.order-table-info .item.cell-2 .row > div{ position: relative;}
+	.order-table-info .item.cell-2 .row .phone_txt{ display: inline-block; position: absolute;}
+
+	#credit_card{ width: 100% !important; }
+
+	/*客服中心*/
+	.contact_page{padding: 20px;}
+
+
+	.forXs{ display: block;}
+	.forMd{ display: none;}
+	.forLg{ display: none;}
+
+	.team_member.intro_right .img{ width: 100%; float: none;}
+	.team_member .text_content{ width: 100%; float: none; padding: 10px;} 
+	.team_member.doctor .img{ width: 100%; float: none;}
+	.team_member.doctor .img:after,.team_member.doctor .img:before{ content: ""; display: block; clear: both; visibility: hidden;}
+	.team_member .img .arrow_box:after{ display: none;}
+	.team_member.doctor .img{ border-radius: 4px 4px 0 0;}
+
+
+	/*搜尋結果*/
+	.seares_seq{ float: none; margin-top: 15px;}
+	.seares_seq .layout{ display: block; margin-top: 15px; }
+	.seares_seq .layout a{ margin: 0 10px 0 0;}
+	.lay_list .sch_item .img{ width: 100px; }
+	.lay_list .sch_item .info_warp{ padding-left: 110px; width: 100%;}
+	.lay_list .sch_item .info_warp .info{ display: block; width: 100%;}
+	.lay_list .sch_item .info_warp .price{display: block; width: 100%; text-align: left; }
+	.lay_list .sch_item .info_warp .btn-box{ display: none;}
+	.sch_item .volumn{ display: none;}
+	.sch_item .title{ margin: 5px 0;}
+	.sch_item .info .promo{ display: none;}
+	.sch_item .info .desc{ white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 100%; }
+
+
+
+}
+
+/*解析度  480px 以下*/
+@media  screen and (max-width: 480px) {
+	/*首頁*/
+	.home_prodslist .prod_item{ margin-bottom: 30px;}
+	/*全球地圖*/
+	.global .map{ position: relative; width: 300px;}
+	.global .map .tw { top: 43px; left: 233px;}
+	.global .map .cn { top: 26px; left: 217px;}
+	.global .map .vn { top: 52px; left: 220px;}
+	.global .map .us { top: 24px; left: 28px;}
+
+	.team_member.doctor .img .img_tit{ padding:10px;}
+	.team_member.doctor .img .img_tit h3{ font-size: 2em; margin: 10px 0;}
+
+	
+	.products_wrap .nav-tabs.schres_tab>li{ width: 50%;}
+
+}
+/*解析度 768 以上 & 992px 以下 */
+@media  screen and (min-width: 768px) and (max-width: 991px) {
+	/*首頁*/
+	.is-fixed .navbar-collapse .nav_search .form-control:focus{ width: 140px; }
+	.home_prodslist .prod_item{ margin-bottom: 30px;}
+	/*全球地圖*/
+	.global .map{ position: relative;}
+	.global .map .tw { top: 164px; left: 575px;}
+	.global .map .cn { top: 126px; left: 520px;}
+	.global .map .vn { top: 189px; left: 552px;}
+	.global .map .us { top: 121px; left: 68px;}
+
+	/**/
+	.plus_purchase .col-item{ width: 25%;}
+	.plus_purchase .col-item.last{ display: none;}
+
+	.comb_form .spec{ width: 100%;}
+	.comb_form .product_extra .col-md-4.extra_qua{ width: 100%; margin-bottom: 15px;}
+	.comb_form .product_extra .col-md-4{ width: 177px;}
+
+	/*BUZZ*/
+	.tab_sele h4{ font-size: 1em;}
+
+	.team_member.intro_right .img{ width: 100%; float: none;}
+	.team_member .text_content{ width: 100%; float: none;} 
+	.team_member.doctor .img{ width: 100%; float: none;}
+	.team_member.doctor .img:after,.team_member.doctor .img:before{ content: ""; display: block; clear: both; visibility: hidden;}
+	.team_member .img .arrow_box:after{ display: none;}
+	.team_member.doctor .img{ border-radius: 4px 4px 0 0;}
+
+	.award_wide .team_member.intro_right .img{ width: 50%;}
+	.award_wide .team_member.intro_right .text_content{ width: 50%;}
+
+
+
+	/*會員中心*/
+	.center_box{ width: 100%;}
+	.login_page > .signin_container .singin_banner{ margin: 0 0 30px 0;}
+	.login_page .signbw{ float: none;}
+
+	.forXs{ display: none;}
+	.forMd{ display: block;}
+	.forLg{ display: none;}
+
+	/**/
+	.row-buzz.lay_list .sch_item .info_warp .info{ display: block; width: 100%;}
+	.row-buzz.lay_list .sch_item .info_warp .btn-box{display: none;}
+	.row-buzz.lay_list .sch_item .info_warp .desc{ height: 40px; overflow: hidden;}
+
+	/**/
+	.lay_block .sch_item{ width: 33.33333%;}
+
+}
+
+/*解析度 768 以上 & 992px 以下 */
+@media  screen and (min-width: 992px) {
+	/*全球地圖*/
+	.global .map{ position: relative;}
+	.global .map .tw { top: 212px; left: 755px;}
+	.global .map .cn { top: 158px; left: 670px;}
+	.global .map .vn { top: 238px; left: 715px;}
+	.global .map .us { top: 151px; left: 95px;}
+
+
+	.login_social .login_fb .btn-facebook{ padding-left: 40px;}
+	.box_wrap .signin_other .regist{ float: none;  margin-bottom: 10px;}
+
+	.center_box{ width: 100%;}
+
+	.forXs{ display: none;}
+	.forMd{ display: none;}
+	.forLg{ display: block;}
+	
+}
+@media  screen and (max-width: 1200px) and (min-width: 992px) {
+	.team_member .img{ width: 60%;}
+	.team_member .text_content{ width: 40%;}
+}
+
+
+/*解析度 1200 以上 */
+@media  screen and (max-width: 1200px) {
+	.hidden-lmd{ display: none;}
+
+	.story_block .col-md-6.lmd .block_text{ position: static;}
+	.story_block .col-md-6.lmd .responsive_img{ display: none;}
+
+	.story_block .col-sm-6.lmd{ width: 100%;}
+	.story_block .col-sm-6.lmd .block_text{ position: static;}
+	.story_block .col-sm-6.lmd .hidden-xs{ display: none;}
+
+	
+}
+
+/*解析度 1170 以上 */
+@media  screen and (min-width: 1200px) {
+	/*全球地圖*/
+	.global .map{ position: relative;}
+	.global .map .tw{ top: 246px; left: 915px;}
+	.global .map .cn{ top: 186px; left: 820px;}
+	.global .map .vn{ top: 276px; left: 865px;}
+	.global .map .us{ top: 166px; left: 135px;}
+
+	.box_wrap .signin_other .regist{ float: right;}
+
+	.center_box{ width: 80%;}
+
+	}
+  
+}
+

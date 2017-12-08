@@ -1,0 +1,32 @@
+/* define device width breakpoint
+=upto-large-pc
+  @media screen and (min-width: 1920px)
+    @content
+
+=large-pc
+  @media screen and (max-width: 1920px - 1px)
+    @content
+
+=upto-pc
+  @media screen and (min-width: 1200px) and (max-width: 1920px - 1px)
+    @content
+
+=pc
+  @media screen and (max-width: 1200px - 1px)
+    @content
+
+=tablet
+  @media screen and (max-width: 992px - 1px)
+    @content
+
+=pad
+  @media screen and (max-width: 768px - 1px)
+    @content
+
+=padphone
+  @media screen and (max-width: 480px)
+    @content
+
+=iphone
+  @media screen and (max-width: 375px)
+    @content
