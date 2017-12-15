@@ -641,6 +641,8 @@ section#homemachine
     .block
     .slick-slide
       padding: 0 20px
+      &:focus
+        outline: 0 !important
   .process-slider
     margin-bottom: 40px
     .figure
@@ -653,48 +655,48 @@ section#homemachine
   .slick-dots > li > button
     border-color: #C5C5C5
 
-
-.contact-wrapper
-  background-image: url("../images/contact_bg.png")
-  background-repeat: no-repeat
-  background-size: cover
-  position: relative
-  padding: 80px 0 180px 0
-  +pad
-    padding: 50px 0
-  .section-header
-    position: absolute
-    bottom: 0
-    right: 0
-    text-align: right
-    background: url("../images/contact_title_bg.png") no-repeat
-    background-position: bottom left
-    background-size: 100%
-    padding: 170px 20px 40px 240px
-    margin: 0
+.home-contact
+  .contact-wrapper
+    background-image: url("../images/contact_bg.png")
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    padding: 80px 0 180px 0
     +pad
-      background: none
-      position: static
-      padding: 0
-      text-align: center
-      margin: 0 0 30px
+      padding: 50px 0
+    .section-header
+      position: absolute
+      bottom: 0
+      right: 0
+      text-align: right
+      background: url("../images/contact_title_bg.png") no-repeat
+      background-position: bottom left
+      background-size: 100%
+      padding: 170px 20px 40px 240px
+      margin: 0
+      +pad
+        background: none
+        position: static
+        padding: 0
+        text-align: center
+        margin: 0 0 30px
 
-  .contact-info
-    .lists
-      margin-bottom: 3rem
-      > li
-        margin-bottom: 0.75rem
-    .material-icons
-      font-size: 1.2em
-      color: $brand-danger
-      top: 4px
-      margin-right: 0.75rem
-      position: relative
-    .btn-wrap
-      .btn
-        max-width: 280px
-        +pad
-          max-width: 100%
+    .contact-info
+      .lists
+        margin-bottom: 3rem
+        > li
+          margin-bottom: 0.75rem
+      .material-icons
+        font-size: 1.2em
+        color: $brand-danger
+        top: 4px
+        margin-right: 0.75rem
+        position: relative
+      .btn-wrap
+        .btn
+          max-width: 280px
+          +pad
+            max-width: 100%
 
 
 
@@ -731,6 +733,12 @@ section#homemachine
       color: #FFF
       font-size: 0.95em
       color: #a197ca
+      .material-icons
+        font-size: 1.2em
+        color: #6B54FF
+        top: 4px
+        margin-right: 0.75rem
+        position: relative
       a
         color: #a197ca
         &:hover
@@ -1026,3 +1034,447 @@ section#homeprocess
   video
     width: 100% !important
     height: auto !important
+
+
+// bootstrap4 header
+nav
+.navbar
+  position: fixed
+  border-radius: unset
+  // min-height: 85px
+.bg-light
+  background-color: #ffffff !important
+
+#page
+  overflow-x: hidden
+.about,.spirit-intro,.technology,.Org-Chart,.contact-intro
+  .jumbotron
+    p
+      font-size: unset
+      font-weight: unset
+  .section-header
+    h2
+      color: #333
+      text-align: center
+    h3
+      text-align: justify
+      font-weight: 500
+
+// Page about start
+.about
+  // height: 1200px
+  // +tablet
+  //   height: 1500px
+  // +pad
+  //   height: unset
+  .jumbotron
+    padding-top: 150px
+    // padding-bottom: 120px
+    background-image: url("../images/about-jumbotron.png")
+    background-position: top center
+    background-repeat: no-repeat
+    background-color: unset
+    width: 100%
+
+    +pad
+      padding: 10rem 0 2rem 0
+      background-color: #ffffff
+      background-size: cover
+      object-fit: cover
+    .about-wrapper
+      // position: relative
+      // background-color: gray
+      // height: 300px
+      +pad
+        padding: 1rem
+      .container
+        // position: absolute
+        background-color: #ffffff
+        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.4)
+        border-radius: 10px
+        padding: 4rem
+        overflow-x: hidden
+        overflow-y: hidden
+        +pad
+          padding: 1rem 1rem 3rem 1rem
+        img
+          padding: 2rem
+          +pad
+            padding: 0 0 2rem 0
+          .intro-text
+            div
+              padding-bottom: 1rem
+
+.spirit-wrapper
+  margin: 0 0 5rem 0
+  +tablet
+    margin-bottom: 5rem
+  +pad
+    margin: auto
+    margin-bottom: 3rem
+
+
+
+
+.technology
+  .technology-wrapper
+    background-image: url("../images/technology-jumbotron.png")
+    object-fit: cover
+    background-size: cover
+    background-repeat: no-repeat
+    // padding: 14rem 0
+    // height: 40rem
+    .container
+      padding: 10rem 0
+      +pad
+        padding: 5rem 0
+      hgroup
+        color: #ffffff
+    .intro-text
+      li
+        color: #6B54FF
+        font-size: 12pt
+        line-height: 1.8em
+        a
+          color: #ffffff
+
+
+
+
+.technology-wide
+  background-color: rgba(41, 22, 110, 0.9)
+  padding: 4rem 0
+  .intro-text
+    div
+      color: #ffffff
+      padding-bottom: 1rem
+  .carousel-item
+    padding-top: 2rem
+    .d-block
+      box-shadow: 4px 5px 8px rgba(33%, 33%, 33%, 0.8)
+
+.Org-Chart
+  .container-fluid
+    padding: 4rem 0
+
+// Page about end
+
+// Page product start
+.product
+  .jumbotron
+    // padding-top: 150px
+    // padding-bottom: 120px
+    background-image: url("../images/product-jumbotron.png")
+    background-position: top center
+    background-size: cover
+    object-fit: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 570px
+    +pad
+      display: none
+      visibility: hidden
+.product-first
+  .product-wrapper
+    margin: 0 0 5rem 0
+    +tablet
+      margin-bottom: 5rem
+    +pad
+      margin: auto
+      margin-bottom: 3rem
+  .photo
+    margin: 0 auto
+    display: block
+    +pad
+      width: 100%
+  .section-header
+    h2
+      color: #333
+
+  .item
+    margin-top: 2rem
+    .section-header
+      h2
+        color: #333
+        text-align: center
+      h3
+        text-align: left
+        font-weight: bold
+        letter-spacing: 0.1rem
+        +pc
+          text-align: center
+      h4
+        font-size: 16px
+        color: #ffffff
+        text-align: center
+        +pc
+          text-align: center
+    .intro-title
+      background-color: #6B54FF
+      padding: 0.1rem 1rem
+      margin-top: 1rem
+      border-radius: 50px
+      width: 250px
+      +tablet
+        display: inline-block
+    .intro-text
+      li
+        // color: #6B54FF
+        list-style-type: decimal
+        font-weight: bold
+        font-size: 18px
+        line-height: 1.8em
+        a
+          color: unset
+          font-weight: normal
+          font-size: 14px
+
+
+.product-second
+  .product-wrapper
+    background-image: url("../images/product_wrapper.png")
+    object-fit: cover
+    background-size: cover
+    background-repeat: no-repeat
+    // padding: 14rem 0
+    // height: 40rem
+    .container
+      padding: 10rem 0
+      +pad
+        padding: 5rem 0
+      hgroup
+        color: #ffffff
+        h3
+          font-weight: bold
+      .intro-text
+        text-align: center
+        li
+          color: #6B54FF
+          font-size: 12pt
+        a
+          color: #ffffff
+          font-weight: bold
+      .photo
+        padding-top: 4rem
+        +pad
+          padding-bottom: 4rem
+
+
+  .home-video
+    padding: 2rem 0
+
+.product-wide
+  background-color: rgba(41, 22, 110, 0.9)
+  padding: 4rem 0
+  img
+    +pad
+      padding: 2rem 6rem
+    +padphone
+      padding: 2rem 0
+
+.product-customized
+  .container-fluid
+    background-image: url("../images/customized-wrapper.png")
+    object-fit: cover
+    background-size: cover
+    background-repeat: no-repeat
+  .customized-wrapper
+    margin: 5rem 0
+    +tablet
+      margin: 10rem 0 5rem 0
+    +pad
+      margin: 3rem 0
+    img
+      display: block
+      margin: 0 auto
+      +pad
+        margin-bottom: 2rem
+      +padphone
+        width: 100%
+    .customized-text
+      text-align: center
+
+// Page product end
+
+// Page process start
+.process
+  .jumbotron
+    // padding-top: 150px
+    // padding-bottom: 120px
+    background-image: url("../images/process-jumbotron.png")
+    background-position: top center
+    background-size: cover
+    object-fit: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 570px
+    +pad
+      display: none
+      visibility: hidden
+  .section-header
+    margin: 30px 0
+    h2
+      color: #fff
+      text-align: center
+    h3
+      font-weight: 500
+  .process-one,.process-two,.process-three,.process-four
+    margin: 15rem 0
+    +pad
+      margin: 5rem 0
+    .process-wrapper
+      display: flex
+      +pad
+        display: block
+      .slide-wrapper
+        visibility: visible
+        +pc
+          margin-top: 5rem
+        +padphone
+          display: none
+          visibility: hidden
+      .slide-wrapper-sm
+        visibility: hidden
+        display: none
+        +padphone
+          margin-top: 5rem
+          visibility: visible
+          display: unset
+
+  .process-text
+    p
+      color: #a9a0ce
+  .process-intro
+    background-image: url("../images/process_bg.png")
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    padding: 12rem 6rem
+    // flex: 0 0 33.3333%
+    // max-width: 33.3333%
+    vertical-align: middle
+    color: #FFF
+    justify-content: center
+    align-items: center
+    // display: flex
+    +pc
+      padding: 6rem 3rem
+    +tablet
+      padding: 3rem
+    +pad
+      padding: 30px 15px
+      max-width: 100%
+      display: block
+    .btn-wrap
+      margin-top: 2rem
+  .carousel-item
+    padding: 1rem 0
+    text-align: center
+    .d-block
+      box-sizing: content-box
+      box-shadow: 4px 5px 8px rgba(33%, 33%, 33%, 0.8)
+      -webkit-filter: brightness(.8)
+
+
+  // .carousel-item
+  //   position: relative
+  //   padding: 1rem 0
+  //   .col
+  //     .d-block
+  //       box-sizing: content-box
+  //       box-shadow: 4px 5px 8px rgba(33%, 33%, 33%, 0.8)
+  //       -webkit-filter: brightness(.8)
+  //     .text
+  //       position: absolute
+  //       bottom: 0
+  //   //   img
+  //   // .brightness
+
+// Page process end
+
+// Page contact start
+.contact
+  // height: 1000px
+  // +tablet
+  //   height: 800px
+  // +pad
+  //   height: auto
+  .jumbotron
+    position: relative
+    padding-top: 150px
+    background-image: url("../images/contact-jumbotron.jpg")
+    background-position: top center
+    background-repeat: no-repeat
+    background-color: unset
+    // iframe
+    //   position: absolute
+    //   bottom: 0
+    //   left: 0
+    //   width: 100%
+    //   height: 100%
+    //   z-index: 1
+    //   visibility: hidden
+    //   display: none
+      +pad
+        visibility: visible
+        display: unset
+    +pc
+      padding-bottom: 120px
+    .map
+      iframe
+        border-radius: 10px
+        height: 700px
+        width: 100%
+
+        +pad
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          z-index: 1
+          visibility: visible
+          display: unset
+
+    +pad
+      // padding: 10rem 0 2rem 0
+      background-color: #ffffff
+      width: 100%
+      margin-top: 5rem
+    .contact-wrapper
+      // position: relative
+      // background-color: gray
+      // height: 300px
+      +pad
+        height: unset
+        visibility: hidden
+      .container
+        // position: absolute
+        background-color: #ffffff
+        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.4)
+        border-radius: 10px
+        padding: 1rem
+        overflow-x: hidden
+        overflow-y: hidden
+
+
+.contact-intro-wrapper
+  // margin: 5rem 0
+  margin-bottom: 5rem
+  +pc
+    margin: -8rem 0 5rem 0
+  +tablet
+    margin: -5rem 0 5rem 0
+  +pad
+    margin: auto
+    margin-bottom: 3rem
+  img
+    display: block
+    margin: 0 auto
+    +pad
+      margin-bottom: 2rem
+    +padphone
+      width: 100%
+
+// Page contact end
