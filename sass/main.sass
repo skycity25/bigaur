@@ -1,18 +1,15 @@
-@import "compass/reset"
-@import "bootstrap"
-@import "compass/css3"
-@import "grid.sass"
+@import "variables"
+@import "reset"
+@import "mixin"
+@import "bootstrap/bootstrap.scss"
+// @import "compass/css3"
+// @import "grid.sass"
 @import "../fonts/material-icons.css"
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css')
 @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic')
 
-/* 設定參數 */
 
 
-// 設定 mixin
-
-
-// extend
 %transition-set
   +transition( all 0.5s ease-in-out)
 %text-shadow
@@ -39,7 +36,7 @@
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 %header-line
-  border-top: 1px solid $gray-base
+  border-top: 1px solid $gray-600
   content: ""
   display: block
   height: 1px
@@ -49,13 +46,12 @@
   width: 40%
   height: 4px
   z-index: 0
-// globe style
-
+//
 body
   position: relative
   font-size: 14px
   background-color: #FFF
-  color: $gray-dark
+  color: $dark
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   font-family: 'PingFang TC','ping-fang-tc-light','Open Sans', 'Helvetica Neue', Helvetica ,'Microsoft JhengHei','Noto Sans TC', sans-serif
@@ -63,15 +59,15 @@ body
     padding-right: 0px !important
 
 a
-  color: $link-color
+  color: $dark
   &:hover,&:focus,&:active,&.active
-    color: $link-color-hover
+    color: $primary
     text-decoration: none
     outline: 0
   &.link-color
-    color: $brand-primary
+    color: $primary
     &:hover,&:focus,&:active,&.active
-      color: $brand-primary
+      color: $primary
       text-decoration: underline
 
 .margin-reset
@@ -88,21 +84,21 @@ a
 
 
 .color-danger
-  color: $brand-danger
+  color: $danger
 .color-warning
-  color: $brand-warning
+  color: $warning
 .color-primary
-  color: $brand-primary
+  color: $primary
 .color-success
-  color: $brand-success
+  color: $success
 
 img.img-fluid
   width: 100%
 
 .dropdown-menu
   border: 0
-  border-top: 2px solid $brand-primary
-  +border-radius($border-radius-small)
+  border-top: 2px solid $primary
+  +border-radius($border-radius-sm)
 
 .btn
   border-radius: 0
@@ -117,17 +113,16 @@ img.img-fluid
     display: block
     margin: auto
     padding: 1%
-    +tablet
+    +media-breakpoint-down(md)
       min-width: 40%
       padding: 2%
-    +padphone
+    +media-breakpoint-down(sm)
       margin: auto
       width: 80%
       padding: 5%
     &:hover
       background-color: #BC0808
       +transition(all 0.3s)
-
 
 .thumbnail
   padding: 0px
@@ -148,17 +143,17 @@ img.img-fluid
       margin-left: 5px
       text-align: center
       &:hover ,&:active,&:focus
-        background: lighten($brand-primary, 30%)
-        border-color: lighten($brand-primary, 30%)
+        background: lighten($primary, 30%)
+        border-color: lighten($primary, 30%)
     &.actvie
       > a
-        background: darken($brand-primary, 15%)
-        border-color: darken($brand-primary, 15%)
+        background: darken($primary, 15%)
+        border-color: darken($primary, 15%)
     &.disabled
       > a
         &:hover , &:active,&:focus
-          background: lighten( $gray-lighter, 20%)
-          border-color: lighten( $gray-lighter, 20%)
+          background: lighten( $gray-400, 20%)
+          border-color: lighten( $gray-400, 20%)
 .breadcrumb
   > li
     max-width: 200px
@@ -173,7 +168,7 @@ img.img-fluid
   padding-bottom: 5px
   border: 0
   background: #FFF
-  +tablet
+  +media-breakpoint-down(md)
     padding: 0
   &.fixed
     width: 100%
@@ -191,20 +186,20 @@ img.img-fluid
       top: -50px
     .header-logo
       width: 220px
-      +tablet
+      +media-breakpoint-down(md)
         padding-left: 5%
         padding-right: 5px
         margin-left: unset
         margin-right: unset
-      +pad
+      +media-breakpoint-down(sm)
         padding-left: unset
         padding-right: unset
         margin: auto
-      +iphone
+      +media-breakpoint-down(xs)
         padding-left: 5%
 
     .navbar-collapse.collapse
-      +tablet
+      +media-breakpoint-down(md)
         visibility: visible
 
 
@@ -212,8 +207,8 @@ img.img-fluid
     float: left
   .widget_shopping_cart
     h5
-      font-size: $font-size-large
-      color: $gray-base
+      font-size: $font-size-lg
+      color: $gray-600
       font-weight: 800
       padding: 0 15px
     .divider
@@ -237,10 +232,10 @@ img.img-fluid
         padding-left: 60px
         line-height: 1.2
         a
-          color: $gray-base
+          color: $gray-600
           font-weight: 800
           &:hover , &:focus , &:active , &.active
-            color: $brand-primary
+            color: $primary
         .title
           height: auto
     .total
@@ -251,17 +246,17 @@ img.img-fluid
         color: #FFF
 
 .header-above
-  // +background-image(linear-gradient(to right, $brand-primary, #00b1ad))
+  // +background-image(linear-gradient(to right, $primary, #00b1ad))
   +transition(all 0.2s)
-  background: $gray
+  background: $gray-600
   line-height: 32px
   height: 34px
   font-size: 12px
   +clearfix
-  +pad
+  +media-breakpoint-down(sm)
     display: none
   > .container
-    +pad
+    +media-breakpoint-down(sm)
       padding: 0
   .lang
     &.dropdown
@@ -271,7 +266,7 @@ img.img-fluid
         margin: 0
 
   .btn-lang
-    background: $brand-primary
+    background: $primary
     color: #FFF
   .flag
     width: 20px
@@ -289,7 +284,7 @@ img.img-fluid
   a
     color: #FFF
     &:hover , &:focus , &:active , &.active
-      color: $brand-warning
+      color: $warning
   ul.toollinks-wrap
     margin: 0px
     float: right
@@ -309,49 +304,49 @@ img.img-fluid
 .main-header
   > .container
     position: relative
-    +tablet
+    +media-breakpoint-down(md)
       padding: 0
   .header-brand
     float: left
     +clearfix
-    +tablet
+    +media-breakpoint-down(md)
       float: none
       position: relative
-    +pad
+    +media-breakpoint-down(sm)
       float: none
       position: relative
       padding: 8px 0
   .navbar-toggle
     background: #FFF
     // border: 1px solid #E2E2E2
-    border-radius: $border-radius-base
+    border-radius: $border-radius
     margin: 0
     &:hover,&:focus,&:active,&.active
-      background: $brand-primary
+      background: $primary
       .icon-bar
         background: #FFF
-    +tablet
+    +media-breakpoint-down(md)
       position: absolute
       top: 50%
       left: 15px
       +transform(translateY(-50%))
     .icon-bar
-      background: $gray
+      background: $gray-600
   .header-logo
     width: 400px
     +transition( all .2s)
-    +tablet
+    +media-breakpoint-down(md)
       margin-left: auto
       margin-right: auto
-    +pad
+    +media-breakpoint-down(sm)
       width: 220px
       margin: 0 auto
-    +iphone
+    +media-breakpoint-down(xs)
       padding-left: 5%
     img
       width: 100%
   .navbar-collapse.collapse
-    +tablet
+    +media-breakpoint-down(md)
       visibility: hidden
 .main-navigation
   position: absolute
@@ -366,18 +361,18 @@ img.img-fluid
         line-height: 20px
         display: block
         text-align: center
-        color: $brand-primary
+        color: $primary
         font-size: 15px
         font-weight: 600
         &:hover , &:focus , &:active , &.active
-          background: $brand-primary
+          background: $primary
           color: #FFF
           +border-radius(3px)
     .dropdown-menu
       margin-top: -2px
     .open
       & > a
-        background: $brand-primary
+        background: $primary
         color: #FFF
       .dropdown-toggle:hover ,.dropdown-toggle:focus ,.dropdown-toggle:active
         border-bottom: 0 !important
@@ -386,8 +381,8 @@ img.img-fluid
       & > a
         padding: 10px 15px
         &:hover , &:focus , &:active , &.active
-          // color: $brand-primary
-          background: rgba($brand-primary, 0.1)
+          // color: $primary
+          background: rgba($primary, 0.1)
   .container
     position: relative
     padding: 0
@@ -414,7 +409,7 @@ img.img-fluid
       border-color: transparent
       border-style: solid
       border-width: 5px 0 5px 5px
-      border-left-color: $gray
+      border-left-color: $gray-500
       margin-top: 5px
       margin-right: -10px
     &.pull-left
@@ -434,7 +429,7 @@ section#homemachine
 .home-machine
   position: relative
   padding: 50px 0
-  +pad
+  +media-breakpoint-down(sm)
     padding: 0
   .triangle
     position: absolute
@@ -444,7 +439,7 @@ section#homemachine
     bottom: -50px
     left: 0
     z-index: 0
-    +pad
+    +media-breakpoint-down(sm)
       height: 360px
     &::after
       content: ""
@@ -456,10 +451,10 @@ section#homemachine
       height: 0
       border-style: solid
       border-width: 0 0 600px 2560px
-      border-color: transparent transparent $brand-primary transparent
-      +large-pc
+      border-color: transparent transparent $primary transparent
+      +media-breakpoint-up(lg)
         border-width: 0 0 900px 2560px
-      +pc
+      +media-breakpoint-down(lg)
         border-width: 0 0 1200px 2560px
 
 
@@ -477,11 +472,11 @@ section#homemachine
       transform: skewY(16deg)
       box-shadow: 0 3px 30px 0 rgba(#000,0.1)
       z-index: 1
-      +large-pc
+      +media-breakpoint-up(lg)
         transform: skewY(24deg)
-      +pc
+      +media-breakpoint-down(lg)
         transform: skewY(20deg)
-      +pad
+      +media-breakpoint-down(sm)
         visibility: hidden
         display: none
   .machine-wrapper
@@ -497,36 +492,36 @@ section#homemachine
         top: 10%
         left: 17%
         width: 40%
-        +pad
+        +media-breakpoint-down(sm)
           position: static
           width: 100%
 
         .block
           text-align: left
-          +pad
+          +media-breakpoint-down(sm)
             text-align: center
           span
-            color: $brand-danger
+            color: $danger
             font-size: 1.2em
             margin-right: 0.75rem
-            +pad
+            +media-breakpoint-down(sm)
               font-size: 1em
           &:nth-child(2)
             margin-left: 38px
             margin-top: 10px
-            +pad
+            +media-breakpoint-down(sm)
               margin-left: 0px
         > .logo
           text-align: left
           display: block
           width: 58%
           margin-bottom: 30px
-          +pad
+          +media-breakpoint-down(sm)
             text-align: center
             display: inline-block
             max-width: 200px
     .speacer
-      +pad
+      +media-breakpoint-down(sm)
         display: none
     .machine-photo
       position: absolute
@@ -535,16 +530,16 @@ section#homemachine
       width: 55%
       max-width: 800px
       z-index: 744
-      +large-pc
+      +media-breakpoint-up(lg)
         right: -6%
-      +pad
+      +media-breakpoint-down(sm)
         width: 80%
         position: static
         margin: 0 auto
 
 
 .home-product
-  background: $brand-primary
+  background: $primary
   .section-header
     color: #FFF
     text-align: left
@@ -552,14 +547,14 @@ section#homemachine
     top: 5%
     right: 39%
     +transform(scale(1.2))
-    +apply-origin(0,0)
-    +pc
+    +transform-origin(0 0)
+    +media-breakpoint-down(lg)
       top: 0
       right: 35%
-    +tablet
+    +media-breakpoint-down(md)
       top: 0%
       right: 27%
-    +pad
+    +media-breakpoint-down(sm)
       position: static
       +transform(scale(1))
       text-align: center
@@ -567,17 +562,17 @@ section#homemachine
     position: relative
     padding-bottom: 80px
     z-index: 412
-    +pad
+    +media-breakpoint-down(sm)
       padding-top: 30px
       padding-bottom: 50px
     .section-header
-      text-shadow: 1px 2px 5px rgba($brand-primary,0.5)
+      text-shadow: 1px 2px 5px rgba($primary,0.5)
     .end-products
       width: 60%
-      +pad
+      +media-breakpoint-down(sm)
         width: 80%
         margin: 0 auto
-      +padphone
+      +media-breakpoint-down(sm)
         width: 100%
       img
         width: 100%
@@ -588,7 +583,7 @@ section#homemachine
 .home-process
   .process-wrapper
     display: flex
-    +pad
+    +media-breakpoint-down(sm)
       display: block
   .process-text
     p
@@ -606,9 +601,9 @@ section#homemachine
     justify-content: center
     align-items: center
     display: flex
-    +tablet
+    +media-breakpoint-down(md)
       padding: 2rem 3rem
-    +pad
+    +media-breakpoint-down(sm)
       padding: 30px 15px
       max-width: 100%
       display: block
@@ -617,7 +612,7 @@ section#homemachine
       color: #FFF
       text-align: left
       margin-top: 0
-      +pad
+      +media-breakpoint-down(sm)
         text-align: center
       h3
         letter-spacing: 0.38em
@@ -625,17 +620,17 @@ section#homemachine
       margin-top: 3rem
       .btn
         max-width: 280px
-        +pad
+        +media-breakpoint-down(sm)
           max-width: unset
   .slide-wrap
     flex: 1 0 66.6666%
     max-width: 66.6666%
     padding: 150px 0
-    +pc
+    +media-breakpoint-down(lg)
       padding: 100px 0
-    +tablet
+    +media-breakpoint-down(md)
       padding: 50px 0
-    +pad
+    +media-breakpoint-down(sm)
       max-width: 100%
       display: block
     .block
@@ -662,7 +657,7 @@ section#homemachine
     background-size: cover
     position: relative
     padding: 80px 0 180px 0
-    +pad
+    +media-breakpoint-down(sm)
       padding: 50px 0
     .section-header
       position: absolute
@@ -674,7 +669,7 @@ section#homemachine
       background-size: 100%
       padding: 170px 20px 40px 240px
       margin: 0
-      +pad
+      +media-breakpoint-down(sm)
         background: none
         position: static
         padding: 0
@@ -688,14 +683,14 @@ section#homemachine
           margin-bottom: 0.75rem
       .material-icons
         font-size: 1.2em
-        color: $brand-danger
+        color: $danger
         top: 4px
         margin-right: 0.75rem
         position: relative
       .btn-wrap
         .btn
           max-width: 280px
-          +pad
+          +media-breakpoint-down(sm)
             max-width: 100%
 
 
@@ -705,7 +700,7 @@ section#homemachine
     img
       max-height: 750px
       object-fit: cover
-      +pad
+      +media-breakpoint-down(sm)
         width: 100%
         min-height: 420px
         object-fit: cover
@@ -713,7 +708,7 @@ section#homemachine
 #footer-container
   .footer-warp
     background: #29166E
-    border-top: 1px solid $nav-border-color
+    border-top: 1px solid $gray-300
     padding: 25px 0 40px
     h5
       text-transform: uppercase
@@ -721,7 +716,7 @@ section#homemachine
       color: #FFF
       font-weight: 800
       font-size: 1.1em
-      +pad
+      +media-breakpoint-down(sm)
         margin-bottom: 10px
     ul
       list-style: none
@@ -744,14 +739,14 @@ section#homemachine
         &:hover
           color: #FFF
     .warp-item
-      +pad
+      +media-breakpoint-down(sm)
         margin-bottom: 15px
     .last
       margin-top: 40px
       border-left: solid
       border-width: thin
       border-color: #FFF
-      +pad
+      +media-breakpoint-down(sm)
         border-left: unset
         border-width: unset
         border-color: unset
@@ -759,7 +754,7 @@ section#homemachine
         color: #FFF
 
   .copyright
-    background: $brand-primary
+    background: $primary
     padding: 5px 0
     font-size: 12px
     color: #6B54FF
@@ -775,13 +770,13 @@ section#homemachine
     p
       line-height: 40px
       margin: 0
-      +pad
+      +media-breakpoint-down(sm)
         line-height: 20px
     .footer-logo
       height: 40px
       display: inline-block
       float: left
-      +pad
+      +media-breakpoint-down(sm)
         float: none
         display: block
         text-align: center
@@ -790,11 +785,10 @@ section#homemachine
     .rights
       p
         float: right
-        +pad
+        +media-breakpoint-down(sm)
           float: none
           display: block
           text-align: center
-
 
 #toTop
   position: fixed
@@ -806,7 +800,7 @@ section#homemachine
   // border: 2px solid $border-dark
   +border-radius(50%)
   +transition(all .3s ease-in-out)
-  background: rgba($header-top-bg, 0.5)
+  background: rgba($primary, 0.5)
   z-index: 1981
   &:before
     position: absolute
@@ -821,7 +815,7 @@ section#homemachine
     +transform( rotate(135deg) )
     +transition(all .3s ease-in-out)
   &:hover,&:focus,&:active,&.active
-    background: $brand-primary
+    background: $primary
     &:before
       border-color: #FFF
 
@@ -840,11 +834,11 @@ section#homemachine
   border: 0
   +transform(translateY(-50%))
   z-index: 561
-  +tablet
+  +media-breakpoint-down(md)
     width: 40px
     height: 50px
     margin-top: -25px
-  +pad
+  +media-breakpoint-down(sm)
     margin-top: 0
   &::after
     content: ''
@@ -857,14 +851,14 @@ section#homemachine
     position: absolute
     top: 20px
     left: 20px
-    +tablet
+    +media-breakpoint-down(md)
       width: 20px
       height: 20px
       top: 15px
       left: 17px
   &:hover,&:focus,&:active,&.active
     outline: 0
-    background: $brand-primary
+    background: $primary
     &::after
       border-color: #FFF
 
@@ -876,7 +870,7 @@ section#homemachine
       right: 20px
       left: auto
       +transform(rotate(225deg) )
-      +tablet
+      +media-breakpoint-down(md)
         right: 17px
 .slick-dots
   margin: 0
@@ -884,14 +878,14 @@ section#homemachine
   position: absolute
   bottom: 40px
   width: 100%
-  +pad
+  +media-breakpoint-down(sm)
     bottom: 0px
   > li
     display: inline-block
     &.slick-active
       > button
-        background: $brand-primary
-        border-color: $brand-primary
+        background: $primary
+        border-color: $primary
     > button
       width: 15px
       height: 15px
@@ -902,7 +896,7 @@ section#homemachine
       margin: 0 5px
       text-indent: -9999px
       overflow: hidden
-      +padphone
+      +media-breakpoint-down(sm)
         width: 10px
         height: 10px
       &:hover,&:focus,&:active,&.active
@@ -912,28 +906,28 @@ section
 .section-header
   text-align: center
   margin: 50px 0 30px
-  color: $brand-primary
-  +pad
+  color: $primary
+  +media-breakpoint-down(sm)
     margin-top: 0
   h2
-    font-size: 2.4em
+    font-size: 2.4rem
     font-weight: 600
     position: relative
     margin: 0 0 10px
     letter-spacing: 0.5rem
-    +pad
-      font-size: 2em
+    +media-breakpoint-down(sm)
+      font-size: 2rem
   h3
-    font-size: 1.5em
+    font-size: 1.5rem
     font-weight: normal
     margin: 0
     letter-spacing: 0.5rem
-    +pad
-      font-size: 1.3em
+    +media-breakpoint-down(sm)
+      font-size: 1.3rem
 
 %section-offset
   padding-top: 100px
-  +pad
+  +media-breakpoint-down(sm)
     padding-top: 50px
 
 .main-slider
@@ -949,47 +943,47 @@ section
   .spirit
     max-width: 80%
     margin: 0 auto
-    +pad
+    +media-breakpoint-down(sm)
       max-width: 100%
     li
       padding: 50px 0px
       text-align: center
-      +pad
+      +media-breakpoint-down(sm)
         padding: 15px 0
       .photo
         margin-bottom: 8px
       img
         max-width: 100px
-        +pad
+        +media-breakpoint-down(sm)
           max-width: 80px
   .btn-wrap
     .btn-lg
-      font-size: 1.1em
+      font-size: 1.1rem
 
 section#homeCases
   padding-top: 50px
-  +pad
+  +media-breakpoint-down(sm)
     padding-top: 30px
   .filter-button-group
     text-align: center
     border-bottom: 1px solid $table-border-color
     margin-bottom: 30px
-    +pad
+    +media-breakpoint-down(sm)
       display: none
     li
       display: inline-block
       margin-bottom: -1px
-      +pad
+      +media-breakpoint-down(sm)
         float: left
         width: 25%
       &.active,&.is-checked
         .btn
           border: 1px solid $table-border-color
           border-bottom-color: #FFF
-          color: $brand-primary
+          color: $primary
           &:hover,&:focus,&:active,&.active
-            border-color: $brand-primary
-            background: $brand-primary
+            border-color: $primary
+            background: $primary
             color: #FFF
     .btn
       padding: 10px 15px
@@ -998,13 +992,13 @@ section#homeCases
       border: 1px solid #FFF
       border-bottom-color: $table-border-color
       &:hover,&:focus,&:active,&.active
-        border-color: $brand-primary
-        background: $brand-primary
+        border-color: $primary
+        background: $primary
         color: #FFF
 
 section#homeprocess
   // padding: 80px 0
-  +pad
+  +media-breakpoint-down(sm)
     // padding: 30px 0
   .logo-wrapper
     .slick-slide
@@ -1016,7 +1010,7 @@ section#homeprocess
   padding-bottom: 45%
   height: 0
   overflow: hidden
-  +pad
+  +media-breakpoint-down(sm)
     padding-bottom: 50%
   iframe
     position: absolute
@@ -1063,9 +1057,9 @@ nav
 // Page about start
 .about
   // height: 1200px
-  // +tablet
+  // +media-breakpoint-down(md)
   //   height: 1500px
-  // +pad
+  // +media-breakpoint-down(sm)
   //   height: unset
   .jumbotron
     padding-top: 150px
@@ -1076,7 +1070,7 @@ nav
     background-color: unset
     width: 100%
 
-    +pad
+    +media-breakpoint-down(sm)
       padding: 10rem 0 2rem 0
       background-color: #ffffff
       background-size: cover
@@ -1085,7 +1079,7 @@ nav
       // position: relative
       // background-color: gray
       // height: 300px
-      +pad
+      +media-breakpoint-down(sm)
         padding: 1rem
       .container
         // position: absolute
@@ -1095,11 +1089,11 @@ nav
         padding: 4rem
         overflow-x: hidden
         overflow-y: hidden
-        +pad
+        +media-breakpoint-down(sm)
           padding: 1rem 1rem 3rem 1rem
         img
           padding: 2rem
-          +pad
+          +media-breakpoint-down(sm)
             padding: 0 0 2rem 0
           .intro-text
             div
@@ -1107,9 +1101,9 @@ nav
 
 .spirit-wrapper
   margin: 0 0 5rem 0
-  +tablet
+  +media-breakpoint-down(md)
     margin-bottom: 5rem
-  +pad
+  +media-breakpoint-down(sm)
     margin: auto
     margin-bottom: 3rem
 
@@ -1126,7 +1120,7 @@ nav
     // height: 40rem
     .container
       padding: 10rem 0
-      +pad
+      +media-breakpoint-down(sm)
         padding: 5rem 0
       hgroup
         color: #ffffff
@@ -1171,21 +1165,21 @@ nav
     background-repeat: no-repeat
     width: 100%
     height: 570px
-    +pad
+    +media-breakpoint-down(sm)
       display: none
       visibility: hidden
 .product-first
   .product-wrapper
     margin: 0 0 5rem 0
-    +tablet
+    +media-breakpoint-down(md)
       margin-bottom: 5rem
-    +pad
+    +media-breakpoint-down(sm)
       margin: auto
       margin-bottom: 3rem
   .photo
     margin: 0 auto
     display: block
-    +pad
+    +media-breakpoint-down(sm)
       width: 100%
   .section-header
     h2
@@ -1201,13 +1195,13 @@ nav
         text-align: left
         font-weight: bold
         letter-spacing: 0.1rem
-        +pc
+        +media-breakpoint-down(lg)
           text-align: center
       h4
         font-size: 16px
         color: #ffffff
         text-align: center
-        +pc
+        +media-breakpoint-down(lg)
           text-align: center
     .intro-title
       background-color: #6B54FF
@@ -1215,7 +1209,7 @@ nav
       margin-top: 1rem
       border-radius: 50px
       width: 250px
-      +tablet
+      +media-breakpoint-down(md)
         display: inline-block
     .intro-text
       li
@@ -1240,7 +1234,7 @@ nav
     // height: 40rem
     .container
       padding: 10rem 0
-      +pad
+      +media-breakpoint-down(sm)
         padding: 5rem 0
       hgroup
         color: #ffffff
@@ -1256,7 +1250,7 @@ nav
           font-weight: bold
       .photo
         padding-top: 4rem
-        +pad
+        +media-breakpoint-down(sm)
           padding-bottom: 4rem
 
 
@@ -1267,9 +1261,9 @@ nav
   background-color: rgba(41, 22, 110, 0.9)
   padding: 4rem 0
   img
-    +pad
+    +media-breakpoint-down(sm)
       padding: 2rem 6rem
-    +padphone
+    +media-breakpoint-down(sm)
       padding: 2rem 0
 
 .product-customized
@@ -1280,16 +1274,16 @@ nav
     background-repeat: no-repeat
   .customized-wrapper
     margin: 5rem 0
-    +tablet
+    +media-breakpoint-down(md)
       margin: 10rem 0 5rem 0
-    +pad
+    +media-breakpoint-down(sm)
       margin: 3rem 0
     img
       display: block
       margin: 0 auto
-      +pad
+      +media-breakpoint-down(sm)
         margin-bottom: 2rem
-      +padphone
+      +media-breakpoint-down(sm)
         width: 100%
     .customized-text
       text-align: center
@@ -1308,7 +1302,7 @@ nav
     background-repeat: no-repeat
     width: 100%
     height: 570px
-    +pad
+    +media-breakpoint-down(sm)
       display: none
       visibility: hidden
   .section-header
@@ -1320,23 +1314,23 @@ nav
       font-weight: 500
   .process-one,.process-two,.process-three,.process-four
     margin: 15rem 0
-    +pad
+    +media-breakpoint-down(sm)
       margin: 5rem 0
     .process-wrapper
       display: flex
-      +pad
+      +media-breakpoint-down(sm)
         display: block
       .slide-wrapper
         visibility: visible
-        +pc
+        +media-breakpoint-down(lg)
           margin-top: 5rem
-        +padphone
+        +media-breakpoint-down(sm)
           display: none
           visibility: hidden
       .slide-wrapper-sm
         visibility: hidden
         display: none
-        +padphone
+        +media-breakpoint-down(sm)
           margin-top: 5rem
           visibility: visible
           display: unset
@@ -1358,11 +1352,11 @@ nav
     justify-content: center
     align-items: center
     // display: flex
-    +pc
+    +media-breakpoint-down(lg)
       padding: 6rem 3rem
-    +tablet
+    +media-breakpoint-down(md)
       padding: 3rem
-    +pad
+    +media-breakpoint-down(sm)
       padding: 30px 15px
       max-width: 100%
       display: block
@@ -1396,9 +1390,9 @@ nav
 // Page contact start
 .contact
   // height: 1000px
-  // +tablet
+  // +media-breakpoint-down(md)
   //   height: 800px
-  // +pad
+  // +media-breakpoint-down(sm)
   //   height: auto
   .jumbotron
     position: relative
@@ -1416,10 +1410,10 @@ nav
     //   z-index: 1
     //   visibility: hidden
     //   display: none
-      +pad
+      +media-breakpoint-down(sm)
         visibility: visible
         display: unset
-    +pc
+    +media-breakpoint-down(lg)
       padding-bottom: 120px
     .map
       iframe
@@ -1427,7 +1421,7 @@ nav
         height: 700px
         width: 100%
 
-        +pad
+        +media-breakpoint-down(sm)
           position: absolute
           top: 0
           left: 0
@@ -1437,7 +1431,7 @@ nav
           visibility: visible
           display: unset
 
-    +pad
+    +media-breakpoint-down(sm)
       // padding: 10rem 0 2rem 0
       background-color: #ffffff
       width: 100%
@@ -1446,7 +1440,7 @@ nav
       // position: relative
       // background-color: gray
       // height: 300px
-      +pad
+      +media-breakpoint-down(sm)
         height: unset
         visibility: hidden
       .container
@@ -1462,19 +1456,19 @@ nav
 .contact-intro-wrapper
   // margin: 5rem 0
   margin-bottom: 5rem
-  +pc
+  +media-breakpoint-down(lg)
     margin: -8rem 0 5rem 0
-  +tablet
+  +media-breakpoint-down(md)
     margin: -5rem 0 5rem 0
-  +pad
+  +media-breakpoint-down(sm)
     margin: auto
     margin-bottom: 3rem
   img
     display: block
     margin: 0 auto
-    +pad
+    +media-breakpoint-down(sm)
       margin-bottom: 2rem
-    +padphone
+    +media-breakpoint-down(sm)
       width: 100%
 
 // Page contact end
