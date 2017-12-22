@@ -127,10 +127,7 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: false,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 7000,
+    adaptiveHeight: true
   });
 
   $('.papperproduct-one-time').slick({

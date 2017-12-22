@@ -1069,7 +1069,6 @@ nav
     background-position: top center
     background-repeat: no-repeat
     background-color: unset
-    background-size: contain
     width: 100%
 
     +media-breakpoint-down(sm)
@@ -1088,13 +1087,17 @@ nav
         background-color: #ffffff
         box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.4)
         border-radius: 10px
-        padding: 4rem
+        padding: 0 2rem 2rem 2rem
         overflow-x: hidden
         overflow-y: hidden
-        +media-breakpoint-down(sm)
-          padding: 1rem 1rem 3rem 1rem
+        // +media-breakpoint-down(md)
+        //   padding: 4rem 2rem
+        +media-breakpoint-down(md)
+          padding: 0 0 2rem 0
+        // +media-breakpoint-down(xs)
+        //   padding: 1rem 1rem 3rem 1rem
         img
-          padding: 2rem
+          padding: 2rem 0.5rem
           +media-breakpoint-down(sm)
             padding: 0 0 2rem 0
           .intro-text
@@ -1210,6 +1213,7 @@ nav
         font-size: 16px
         color: #ffffff
         text-align: center
+        margin-top: 0.5em 
         +media-breakpoint-down(lg)
           text-align: center
     .intro-title
@@ -1217,8 +1221,8 @@ nav
       padding: 0.1rem 1rem
       margin-top: 1rem
       border-radius: 50px
-      width: 250px
-      +media-breakpoint-down(md)
+      width: 260px
+      +media-breakpoint-down(lg)
         display: inline-block
     .intro-text
       li
@@ -1231,6 +1235,21 @@ nav
           color: unset
           font-weight: normal
           font-size: 14px
+    .photo-header
+      margin-bottom: 2rem
+      h4
+        font-size: 16px
+        color: #ffffff
+        text-align: center
+        margin-top: 0.5em 
+        +media-breakpoint-down(lg)
+          text-align: center
+      .photo-title
+      background-color: #6B54FF
+      padding: 0.1rem 0
+      margin-top: 1rem
+      border-radius: 50px
+      
 
 
 .product-second
