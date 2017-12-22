@@ -47,7 +47,8 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
-    centerMode: true,
+    centerMode: false,
+    arrows: false,
     focusOnSelect: true,
     responsive: [
     {
@@ -86,14 +87,111 @@ $(document).ready(function() {
 
   });
 
+  $('.contact-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
+
+  $('.processb-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
+
+  $('.product-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
+
+  $('.one-time').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+  });
+
+  $('.product-one-time').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+  });
+
+  $('.papperproduct-one-time').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
+  });
+
+
+  $('.center').slick({
+    autoplay: true,
+    autoplaySpeed: 450,
+    dots: false,
+    arrows:false,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
 
 
   $('.dropdown-hover').dropdownHover(100);
 
 
 
-
-
-
-
 });
+
+
+
+// $('#carouselExample').on('slide.bs.carousel', function (e) {
+//
+//     var $e = $(e.relatedTarget);
+//     var idx = $e.index();
+//     var itemsPerSlide = 4;
+//     var totalItems = $('.carousel-item').length;
+//
+//     if (idx >= totalItems-(itemsPerSlide-1)) {
+//         var it = itemsPerSlide - (totalItems - idx);
+//         for (var i=0; i
