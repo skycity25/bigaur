@@ -19,6 +19,10 @@ $(document).ready(function() {
     },
   })
 
+  $("#pageHeader , #page").stick_in_parent({
+    'offset_top': '-250'
+  })
+
   $().UItoTop({ easingType: 'easeOutQuart' });
 
   $('#heroBanner').slick({
