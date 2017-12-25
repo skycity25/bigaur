@@ -74,7 +74,7 @@ $(document).ready(function() {
   });
 
   $('.contact-slide').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -82,20 +82,20 @@ $(document).ready(function() {
   });
 
   $('.processb-slide').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
   });
 
-  $('.product-slide').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-  });
+  // $('.product-slide').slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   arrows: false,
+  // });
 
   $('.one-time').slick({
     dots: false,
@@ -125,40 +125,87 @@ $(document).ready(function() {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 7000,
+    fade: true,
+    cssEase: 'linear'
   });
 
 
-  $('.center').slick({
-    autoplay: true,
-    autoplaySpeed: 450,
-    dots: false,
-    arrows:false,
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
+  // $('.center').slick({
+  //   autoplay: true,
+  //   autoplaySpeed: 800,
+  //   dots: false,
+  //   arrows:false,
+  //   centerMode: true,
+  //   centerPadding: '60px',
+  //   slidesToShow: 4,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
+
+  $('.responsive').slick({
+  autoplay: true,
+  autoplaySpeed: 3500,
+  dots: false,
+  infinite: true,
+  speed: 800,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
       }
-    ]
-  });
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 
+$('.product-slide').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
 
   $('.dropdown-hover').dropdownHover(100);
 

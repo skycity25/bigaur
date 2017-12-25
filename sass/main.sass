@@ -245,7 +245,8 @@ a
         color: #FFF
 
 .header-above
-  +linear-gradient(90deg, $primary, #613baf)
+  // +linear-gradient(90deg, $primary, #613baf)
+  background: $primary
   +transition(all 0.2s)
   line-height: 32px
   height: 34px
@@ -911,6 +912,10 @@ section
 .main-slider
   position: relative
   z-index: 50
+  margin-top: 100px
+  +media-breakpoint-down(sm)
+    margin-top: 50px
+
 .company-wrapper
   padding: 50px 0
   position: relative
@@ -1039,12 +1044,15 @@ section#homeprocess
     background-repeat: no-repeat
     background-color: unset
     width: 100%
+    margin-top: 20px
+
 
     +media-breakpoint-down(sm)
-      padding: 10rem 0 2rem 0
+      padding: 2rem 0
       background-color: #ffffff
       background-size: cover
       object-fit: cover
+      margin-top: unset
     .about-wrapper
       // position: relative
       // background-color: gray
@@ -1140,14 +1148,19 @@ section#homeprocess
     background-repeat: no-repeat
     width: 100%
     height: 570px
+    margin-top: 50px
     +media-breakpoint-down(sm)
       display: none
       visibility: hidden
 
 .product-demo
-  .center
+  // .center
+  .responsive
     img
       padding: 0 1rem
+      border-radius: unset
+  +media-breakpoint-down(sm)
+    margin-top: 5rem
 
 .product-first
   .product-wrapper
@@ -1230,7 +1243,7 @@ section#homeprocess
     // padding: 14rem 0
     // height: 40rem
     .container
-      padding: 10rem 0
+      padding: 2rem 0 5rem 0
       +media-breakpoint-down(sm)
         padding: 5rem 0
       hgroup
@@ -1257,11 +1270,23 @@ section#homeprocess
 .product-wide
   background-color: rgba(41, 22, 110, 0.9)
   padding: 4rem 0
+  +media-breakpoint-down(sm)
+    padding: 0 0
   img
     +media-breakpoint-down(sm)
       padding: 2rem 6rem
     +media-breakpoint-down(sm)
-      padding: 2rem 0
+      padding: 1rem 0
+  .slick-slide
+    img
+      margin: auto
+      display: block
+      width: 50%
+  .buttom-line
+    padding-top: 3rem
+    +media-breakpoint-down(sm)
+      padding-top: unset
+
 
 .product-customized
   .container-fluid
@@ -1301,6 +1326,7 @@ section#homeprocess
     width: 100%
     height: 570px
     margin-bottom: unset
+    margin-top: 50px
     +media-breakpoint-down(sm)
       display: none
       visibility: hidden
@@ -1417,7 +1443,7 @@ section#homeprocess
 .process-two
   .bigaur-intro
     img
-      padding: 6rem 0rem 3rem 0rem
+      padding: 6rem 0.5rem 3rem 0.5rem
   .section-header
     h2
       padding-top: 2rem
@@ -1454,6 +1480,7 @@ section#homeprocess
     background-position: top center
     background-repeat: no-repeat
     background-color: unset
+    margin-top: 50px
     // iframe
     //   position: absolute
     //   bottom: 0
@@ -1468,10 +1495,11 @@ section#homeprocess
         display: unset
     +media-breakpoint-down(lg)
       padding-bottom: 120px
+      margin-top: 50px
     .map
       iframe
         border-radius: 10px
-        height: 580px
+        height: 560px
         width: 100%
 
         +media-breakpoint-down(sm)
