@@ -7014,11 +7014,7 @@ section .section-header {
 
 .main-slider {
   position: relative;
-  z-index: 50;
-  margin-top: 100px; }
-  @media (max-width: 767px) {
-    .main-slider {
-      margin-top: 50px; } }
+  z-index: 50; }
 
 .company-wrapper {
   padding: 50px 0;
@@ -7138,15 +7134,13 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: unset;
-  width: 100%;
-  margin-top: 20px; }
+  width: 100%; }
   @media (max-width: 767px) {
     .about .jumbotron {
       padding: 2rem 0;
       background-color: #ffffff;
       background-size: cover;
-      object-fit: cover;
-      margin-top: unset; } }
+      object-fit: cover; } }
   @media (max-width: 767px) {
     .about .jumbotron .about-wrapper {
       padding: 1rem; } }
@@ -7218,8 +7212,7 @@ section#homeprocess .logo-wrapper .slick-slide {
   object-fit: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 570px;
-  margin-top: 50px; }
+  height: 570px; }
   @media (max-width: 767px) {
     .product .jumbotron {
       display: none;
@@ -7344,10 +7337,11 @@ section#homeprocess .logo-wrapper .slick-slide {
   @media (max-width: 767px) {
     .product-wide img {
       padding: 1rem 0; } }
-  .product-wide .slick-slide img {
+  .product-wide .slider-for img {
     margin: auto;
     display: block;
-    width: 50%; }
+    width: 50%;
+    border-radius: 1rem; }
   .product-wide .buttom-line {
     padding-top: 3rem; }
     @media (max-width: 767px) {
@@ -7387,8 +7381,7 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-repeat: no-repeat;
   width: 100%;
   height: 570px;
-  margin-bottom: unset;
-  margin-top: 50px; }
+  margin-bottom: unset; }
   @media (max-width: 767px) {
     .process .jumbotron {
       display: none;
@@ -7492,8 +7485,7 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-image: url("../images/contact-jumbotron.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: unset;
-  margin-top: 50px; }
+  background-color: unset; }
   @media (max-width: 1199px) {
     .contact .jumbotron {
       padding-bottom: 120px;

@@ -36,6 +36,7 @@
   <script src="js/jquery.mmenu.all.js"></script>
   <script src="js/jquery.ui.totop.min.js"></script>
   <script src="js/bootstrap-hover-dropdown.min.js"></script>
+  <script src="js/jquery.sticky-kit.min.js"></script>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -53,7 +54,7 @@
   <body>
     <div id="page">
       <!-- Navigation -->
-      <header class="page-header fixed-top" id="pageHeader">
+      <header class="page-header" id="pageHeader">
         <div class="header-above">
           <div class="container">
             <div class="d-flex">
@@ -535,69 +536,103 @@
           <div class="container-fluid product-wide">
             <div class="slide-wrap">
               <div class="">
-                <ul class="product-slide">
-                  <li>
-                    <div class="item">
-                      <div class="bigaur-intro">
-                        <img src="images/product-2nd-6.jpg" alt="">
+                <ul class="slider-for">
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-1.png" alt="">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item">
-                      <div class="bigaur-intro">
-                        <img src="images/product-2nd-1.jpg" alt="">
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-2.png" alt="">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item">
-                      <div class="bigaur-intro">
-                        <img src="images/product-2nd-2.jpg" alt="">
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-3.png" alt="">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item">
-                      <div class="bigaur-intro">
-                        <img src="images/product-2nd-3.jpg" alt="">
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-4.png" alt="">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item">
-                      <div class="bigaur-intro">
-                        <img src="images/product-2nd-4.jpg" alt="">
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-5.png" alt="">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item">
-                      <div class="bigaur-intro">
-                        <img src="images/product-2nd-5.jpg" alt="">
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-6.png" alt="">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
               </div>
-              <div class="buttom-line">
+              <div class="">
+                <ul class="slider-nav">
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-1.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-2.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-3.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-4.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-5.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="bigaur-intro">
+                          <img src="images/papper-product-6.png" alt="">
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
+              <!-- <div class="buttom-line">
                 <img class="img-fluid" src="images/buttom-bg.png" alt="">
-              </div>
+              </div> -->
             </div>
           </div>
       </section>
-
-<!-- <紙塑成品> -->
-      <section class="product-">
-          <div class="container-fluid">
-            <div class="container">
-              <div class=" -wrapper">
-
-              </div>
-            </div>
-          </div>
-      </section>
-
 
 <!-- <其他輪播> -->
       <section class="product-">
@@ -638,10 +673,10 @@
 
       <!-- Footer -->
       <footer id="footer-container">
-        <div class="footer-warp">
+        <div class="footer-warp py-5 d-none d-sm-block">
           <div class="container">
             <div class="row">
-              <div class="col warp-item offset-1">
+              <div class="col-sm">
                 <h5>關於弼伽</h5>
                 <ul>
                   <li><a href="about.html">公司介紹</a></li>
@@ -650,7 +685,7 @@
                   <li><a href="#"></a>組織規劃</li>
                 </ul>
               </div>
-              <div class="col warp-item">
+              <div class="col-sm">
                 <h5>產品介紹</h5>
                 <ul>
                   <li><a href="#">漿線產品</a></li>
@@ -658,7 +693,7 @@
                   <li><a href="#">客製化服務</a></li>
                 </ul>
               </div>
-              <div class="col warp-item">
+              <div class="col-sm">
                 <h5>工藝介紹</h5>
                 <ul>
                   <li><a href="#">木漿處理系統</a></li>
@@ -667,10 +702,8 @@
                   <li><a href="#">廢紙脫墨處理系統</a></li>
                 </ul>
               </div>
-              <div class="col warp-item">
+              <div class="col-sm">
                 <h5>聯絡我們</h5>
-              </div>
-              <div class="col-4 warp-item last">
                 <ul>
                   <li><i class="material-icons">&#xE0AF;</i>弼伽機械科技無錫有限公司</li>
                   <li><i class="material-icons">&#xE55E;</i>中國江蘇省無錫市胡埭鎮工業區</li>
@@ -683,10 +716,9 @@
         </div>
         <div class="copyright">
         <!-- Container Starts -->
+        <hr>
           <div class="container">
-            <div class="col-md-12">
-              <p>© 2017 <a href=""> BIGUAR MACHINE </a>. All Rights Reserved.</p>
-            </div>
+            <p>© 2017 <a href=""> BIGUAR MACHINE </a>. All Rights Reserved.</p>
           </div>
         <!-- Container Ends -->
         </div>

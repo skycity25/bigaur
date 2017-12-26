@@ -168,6 +168,7 @@ $(document).ready(function() {
   autoplay: true,
   autoplaySpeed: 3500,
   dots: false,
+  arrows: false,
   infinite: true,
   speed: 800,
   slidesToShow: 4,
@@ -203,13 +204,31 @@ $(document).ready(function() {
 });
 
 
-$('.product-slide').slick({
-  dots: false,
-  infinite: true,
-  speed: 500,
+// $('.product-slide').slick({
+//   dots: false,
+//   infinite: true,
+//   speed: 500,
+//   fade: true,
+//   cssEase: 'linear'
+// });
+
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
   fade: true,
-  cssEase: 'linear'
+  asNavFor: '.slider-nav'
 });
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+
+});
+
 
   $('.dropdown-hover').dropdownHover(100);
 
