@@ -6296,12 +6296,7 @@ a {
       color: #FFF; }
 
 .header-above {
-  background: #613baf;
-  background: -moz-linear-gradient(90deg, #29166E, #613baf);
-  background: -webkit-linear-gradient(90deg, #29166E, #613baf);
-  background: -o-linear-gradient(90deg, #29166E, #613baf);
-  background: linear-gradient(90deg, #29166E, #613baf);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#  $from, endColorstr=#  $to);
+  background: #29166E;
   transition: all 0.2s;
   line-height: 32px;
   height: 34px;
@@ -6798,7 +6793,7 @@ a {
     line-height: 1.3rem; }
     #footer-container .footer-warp li .material-icons {
       font-size: 1.2em;
-      color: #9765ff;
+      color: #6B54FF;
       top: 4px;
       margin-right: 0.75rem;
       position: relative; }
@@ -6825,14 +6820,14 @@ a {
   background: #29166E;
   padding: 5px 0;
   font-size: 12px;
-  color: #9765ff;
+  color: #6B54FF;
   text-align: center; }
   #footer-container .copyright .pull-left {
     float: none !important; }
   #footer-container .copyright .pull-right {
     float: none !important; }
   #footer-container .copyright a {
-    color: #9765ff; }
+    color: #6B54FF; }
     #footer-container .copyright a:hover, #footer-container .copyright a:focus, #footer-container .copyright a:active, #footer-container .copyright a.active {
       color: #FFF; }
   #footer-container .copyright p {
@@ -7019,7 +7014,11 @@ section .section-header {
 
 .main-slider {
   position: relative;
-  z-index: 50; }
+  z-index: 50;
+  margin-top: 100px; }
+  @media (max-width: 767px) {
+    .main-slider {
+      margin-top: 50px; } }
 
 .company-wrapper {
   padding: 50px 0;
@@ -7139,13 +7138,15 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: unset;
-  width: 100%; }
+  width: 100%;
+  margin-top: 20px; }
   @media (max-width: 767px) {
     .about .jumbotron {
-      padding: 10rem 0 2rem 0;
+      padding: 2rem 0;
       background-color: #ffffff;
       background-size: cover;
-      object-fit: cover; } }
+      object-fit: cover;
+      margin-top: unset; } }
   @media (max-width: 767px) {
     .about .jumbotron .about-wrapper {
       padding: 1rem; } }
@@ -7190,7 +7191,7 @@ section#homeprocess .logo-wrapper .slick-slide {
     .technology .technology-wrapper .container hgroup h2 {
       color: #ffffff; }
   .technology .technology-wrapper .intro-text li {
-    color: #9765ff;
+    color: #6B54FF;
     font-size: 12pt;
     line-height: 1.8em; }
     .technology .technology-wrapper .intro-text li a {
@@ -7217,14 +7218,19 @@ section#homeprocess .logo-wrapper .slick-slide {
   object-fit: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 570px; }
+  height: 570px;
+  margin-top: 50px; }
   @media (max-width: 767px) {
     .product .jumbotron {
       display: none;
       visibility: hidden; } }
 
-.product-demo .center img {
-  padding: 0 1rem; }
+.product-demo .responsive img {
+  padding: 0 1rem;
+  border-radius: unset; }
+@media (max-width: 767px) {
+  .product-demo {
+    margin-top: 5rem; } }
 
 .product-first .product-wrapper {
   margin: 0 0 5rem 0; }
@@ -7264,7 +7270,7 @@ section#homeprocess .logo-wrapper .slick-slide {
       .product-first .item .section-header h4 {
         text-align: center; } }
   .product-first .item .intro-title {
-    background-color: #9765ff;
+    background-color: #6B54FF;
     padding: 0.1rem 1rem;
     margin-top: 1rem;
     border-radius: 50px;
@@ -7283,7 +7289,7 @@ section#homeprocess .logo-wrapper .slick-slide {
       font-size: 14px; }
   .product-first .item .photo-header {
     margin-bottom: 2rem;
-    background-color: #9765ff;
+    background-color: #6B54FF;
     padding: 0.1rem 0;
     margin-top: 1rem;
     border-radius: 50px; }
@@ -7302,7 +7308,7 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-size: cover;
   background-repeat: no-repeat; }
   .product-second .product-wrapper .container {
-    padding: 10rem 0; }
+    padding: 2rem 0 5rem 0; }
     @media (max-width: 767px) {
       .product-second .product-wrapper .container {
         padding: 5rem 0; } }
@@ -7313,7 +7319,7 @@ section#homeprocess .logo-wrapper .slick-slide {
     .product-second .product-wrapper .container .intro-text {
       text-align: center; }
       .product-second .product-wrapper .container .intro-text li {
-        color: #9765ff;
+        color: #6B54FF;
         font-size: 12pt; }
       .product-second .product-wrapper .container .intro-text a {
         color: #ffffff;
@@ -7330,11 +7336,23 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-color: rgba(41, 22, 110, 0.9);
   padding: 4rem 0; }
   @media (max-width: 767px) {
+    .product-wide {
+      padding: 0 0; } }
+  @media (max-width: 767px) {
     .product-wide img {
       padding: 2rem 6rem; } }
   @media (max-width: 767px) {
     .product-wide img {
-      padding: 2rem 0; } }
+      padding: 1rem 0; } }
+  .product-wide .slick-slide img {
+    margin: auto;
+    display: block;
+    width: 50%; }
+  .product-wide .buttom-line {
+    padding-top: 3rem; }
+    @media (max-width: 767px) {
+      .product-wide .buttom-line {
+        padding-top: unset; } }
 
 .product-customized .container-fluid {
   background-image: url("../images/customized-wrapper.png");
@@ -7369,7 +7387,8 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-repeat: no-repeat;
   width: 100%;
   height: 570px;
-  margin-bottom: unset; }
+  margin-bottom: unset;
+  margin-top: 50px; }
   @media (max-width: 767px) {
     .process .jumbotron {
       display: none;
@@ -7409,7 +7428,7 @@ section#homeprocess .logo-wrapper .slick-slide {
     .process-one .process-wrapper .container .intro-text {
       text-align: center; }
       .process-one .process-wrapper .container .intro-text li {
-        color: #9765ff;
+        color: #6B54FF;
         font-size: 12pt; }
       .process-one .process-wrapper .container .intro-text a {
         color: #ffffff;
@@ -7460,7 +7479,7 @@ section#homeprocess .logo-wrapper .slick-slide {
     -webkit-filter: brightness(0.8); }
 
 .process-two .bigaur-intro img {
-  padding: 6rem 0rem 3rem 0rem; }
+  padding: 6rem 0.5rem 3rem 0.5rem; }
 .process-two .section-header h2 {
   padding-top: 2rem; }
   @media (max-width: 991px) {
@@ -7473,13 +7492,15 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-image: url("../images/contact-jumbotron.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: unset; }
+  background-color: unset;
+  margin-top: 50px; }
   @media (max-width: 1199px) {
     .contact .jumbotron {
-      padding-bottom: 120px; } }
+      padding-bottom: 120px;
+      margin-top: 50px; } }
   .contact .jumbotron .map iframe {
     border-radius: 10px;
-    height: 580px;
+    height: 560px;
     width: 100%; }
     @media (max-width: 767px) {
       .contact .jumbotron .map iframe {
