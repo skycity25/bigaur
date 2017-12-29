@@ -464,9 +464,13 @@ section#homemachine
       .section-header
         position: absolute
         top: 10%
-        left: 17%
+        left: 15%
         width: 40%
+        +media-breakpoint-down(lg)
+          top: -4%
+          left: 5%
         +media-breakpoint-down(md)
+          top: -6%
           left: 0
           width: 50%
         +media-breakpoint-down(sm)
@@ -509,13 +513,18 @@ section#homemachine
     .machine-photo
       position: absolute
       bottom: 0%
-      right: 6%
       width: 55%
       max-width: 800px
       z-index: 744
+      right: 0%
+      +media-breakpoint-up(xl)
+        right: -3%
       +media-breakpoint-up(lg)
-        right: -6%
+        right: -8%
+      +media-breakpoint-up(md)
+        right: 0
       +media-breakpoint-down(sm)
+        // right: 0%
         width: 80%
         position: static
         margin: 0 auto
@@ -590,10 +599,9 @@ section#homemachine
     +media-breakpoint-down(md)
       padding: 2rem 3rem
     +media-breakpoint-down(sm)
-      padding: 30px 15px
+      padding: 30px
       max-width: 100%
       display: block
-
     .section-header
       color: #FFF
       text-align: left
@@ -602,6 +610,8 @@ section#homemachine
         text-align: center
       h3
         letter-spacing: 0.38em
+  .slide-wrap
+    margin: auto 0
   .slide-wrap
     flex: 1 0 66.6666%
     max-width: 66.6666%
@@ -1099,9 +1109,9 @@ section#homeprocess
     // padding: 14rem 0
     // height: 40rem
     .container
-      padding: 10rem 0
-      +media-breakpoint-down(sm)
-        padding: 5rem 0
+      padding: 5rem 0
+      // +media-breakpoint-down(sm)
+      //   padding: 5rem 0
       hgroup
         h2
           color: #ffffff
@@ -1224,10 +1234,10 @@ section#homeprocess
         +media-breakpoint-down(lg)
           text-align: center
       .photo-title
-      background-color: $primary-light
-      padding: 0.1rem 0
-      margin-top: 1rem
-      border-radius: 50px
+        background-color: $primary-light
+        padding: 0.1rem 0
+        margin-top: 1rem
+        border-radius: 50px
 
 
 
@@ -1245,8 +1255,16 @@ section#homeprocess
         padding: 5rem 0
       hgroup
         color: #ffffff
+        .title-border
+          border-style: solid
+          border-width: 2px
+          border-radius: 50px
+          border-color: $primary-light
+          margin: 0 4rem
+          padding: 0.5rem 0
         h3
           font-weight: bold
+
       .intro-text
         text-align: center
         li
@@ -1274,12 +1292,14 @@ section#homeprocess
       padding: 2rem 6rem
     +media-breakpoint-down(sm)
       padding: 1rem 0
+  hgroup
+    color: #ffffff
   .slider-for
     img
       margin: auto
       display: block
       width: 50%
-      border-radius: 1rem
+
   .buttom-line
     padding-top: 3rem
     +media-breakpoint-down(sm)
@@ -1293,12 +1313,13 @@ section#homeprocess
     background-size: cover
     background-repeat: no-repeat
   .customized-wrapper
-    // margin: 5rem 0
+    margin-top: 5rem
     padding: 3rem 0
     +media-breakpoint-down(md)
-      margin: 10rem 0 5rem 0
+      margi-topn: 5rem
     +media-breakpoint-down(sm)
-      margin: 3rem 0
+      margin-top: 3rem
+      // padding-bottom: 3rem
     img
       display: block
       margin: 0 auto
@@ -1348,8 +1369,15 @@ section#homeprocess
         padding-top: 6rem
         +media-breakpoint-down(md)
           padding-top: 7rem
+      .title-border
+        border-style: solid
+        border-width: 2px
+        border-radius: 50px
+        border-color: $primary-light
+        margin-bottom: 2rem
       h3
-        padding: 1rem 0
+        padding: 0.6rem 0
+
     .container
       padding: 2rem 0 4rem 0
       +media-breakpoint-down(md)
@@ -1403,6 +1431,8 @@ section#homeprocess
       display: block
     .btn-wrap
       margin-top: 2rem
+
+
   .carousel-item
     padding: 1rem 0
     text-align: center
@@ -1537,7 +1567,7 @@ section#homeprocess
 // Page contact end
 
 
-#bestFlight
+#otherproduct
   .offer-wrapper
     .row
       margin-left: -0.25rem
