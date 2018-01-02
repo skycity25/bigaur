@@ -6791,7 +6791,7 @@ a {
       .home-machine .machine-wrapper > .container .section-header {
         position: absolute;
         top: 10%;
-        left: 15%;
+        left: 10%;
         width: 40%; }
         @media (max-width: 1199px) {
           .home-machine .machine-wrapper > .container .section-header {
@@ -6853,11 +6853,11 @@ a {
         display: none; } }
     .home-machine .machine-wrapper .machine-photo {
       position: absolute;
-      bottom: 0%;
+      bottom: -2%;
       width: 55%;
       max-width: 800px;
       z-index: 744;
-      right: 0%; }
+      right: 2%; }
       @media (min-width: 1200px) {
         .home-machine .machine-wrapper .machine-photo {
           right: -3%; } }
@@ -6866,7 +6866,8 @@ a {
           right: -8%; } }
       @media (min-width: 768px) {
         .home-machine .machine-wrapper .machine-photo {
-          right: 0; } }
+          right: 0;
+          top: 0; } }
       @media (max-width: 767px) {
         .home-machine .machine-wrapper .machine-photo {
           width: 80%;
@@ -6919,17 +6920,19 @@ a {
         padding-bottom: 50px; } }
     .home-product .product-wrapper .section-header {
       text-shadow: 1px 2px 5px rgba(41, 22, 110, 0.5); }
-    .home-product .product-wrapper .end-products {
-      width: 60%; }
+    @media (max-width: 767px) {
+      .home-product .product-wrapper .end-products {
+        width: 80%;
+        margin: 0 auto; } }
+    @media (max-width: 767px) {
+      .home-product .product-wrapper .end-products {
+        width: 100%; } }
+    .home-product .product-wrapper .end-products img {
+      width: 100%;
+      margin-top: 5rem; }
       @media (max-width: 767px) {
-        .home-product .product-wrapper .end-products {
-          width: 80%;
-          margin: 0 auto; } }
-      @media (max-width: 767px) {
-        .home-product .product-wrapper .end-products {
-          width: 100%; } }
-      .home-product .product-wrapper .end-products img {
-        width: 100%; }
+        .home-product .product-wrapper .end-products img {
+          margin-top: unset; } }
     .home-product .product-wrapper .btn-wrap {
       margin-top: 3em; }
 
@@ -7439,12 +7442,14 @@ section#homeprocess .logo-wrapper .slick-slide {
     overflow-y: hidden; }
     @media (max-width: 991px) {
       .about .jumbotron .about-wrapper .container {
-        padding: 0 0 2rem 0; } }
+        padding: 1rem 0 2rem 0; } }
     .about .jumbotron .about-wrapper .container img {
-      padding: 2rem 0.5rem; }
+      padding: 2rem 0.5rem;
+      display: block;
+      margin: auto; }
       @media (max-width: 767px) {
         .about .jumbotron .about-wrapper .container img {
-          padding: 0 0 2rem 0; } }
+          padding: 1rem 0; } }
       .about .jumbotron .about-wrapper .container img .intro-text div {
         padding-bottom: 1rem; }
 
@@ -7480,9 +7485,11 @@ section#homeprocess .logo-wrapper .slick-slide {
   .technology-wide .intro-text div {
     color: #ffffff;
     padding-bottom: 1rem; }
-  .technology-wide .carousel-item {
-    padding-top: 2rem; }
-    .technology-wide .carousel-item .d-block {
+  .technology-wide .slide-wrap {
+    margin-top: 2rem; }
+    .technology-wide .slide-wrap img {
+      padding: 0 0.5rem; }
+    .technology-wide .slide-wrap .d-block {
       box-shadow: 4px 5px 8px rgba(84, 84, 84, 0.8); }
 
 .Org-Chart .container-fluid {
@@ -7501,12 +7508,14 @@ section#homeprocess .logo-wrapper .slick-slide {
       display: none;
       visibility: hidden; } }
 
-.product-demo .responsive img {
-  padding: 0 1rem;
-  border-radius: unset; }
-@media (max-width: 767px) {
-  .product-demo {
-    margin-top: 5rem; } }
+.product-demo {
+  margin-bottom: 2rem; }
+  .product-demo .responsive img {
+    padding: 0 1rem;
+    border-radius: unset; }
+  @media (max-width: 767px) {
+    .product-demo {
+      margin-top: 5rem; } }
 
 .product-first .product-wrapper {
   margin: 0 0 5rem 0; }
@@ -7525,6 +7534,12 @@ section#homeprocess .logo-wrapper .slick-slide {
       width: 100%; } }
 .product-first .section-header h2 {
   color: #333; }
+.product-first .product-one-time .slick-dots {
+  bottom: -60px; }
+  .product-first .product-one-time .slick-dots button {
+    border: 2px solid #C5C5C5; }
+.product-first .product-one-time .slick-active button {
+  border: 2px solid #29166E; }
 .product-first .item {
   margin-top: 2rem; }
   .product-first .item .section-header h2 {
@@ -7554,6 +7569,9 @@ section#homeprocess .logo-wrapper .slick-slide {
     @media (max-width: 1199px) {
       .product-first .item .intro-title {
         display: inline-block; } }
+    @media (max-width: 767px) {
+      .product-first .item .intro-title {
+        width: unset; } }
   .product-first .item .intro-text li {
     list-style-type: decimal;
     font-weight: bold;
@@ -7618,22 +7636,16 @@ section#homeprocess .logo-wrapper .slick-slide {
 
 .product-wide {
   background-color: rgba(41, 22, 110, 0.9);
-  padding: 4rem 0; }
-  @media (max-width: 767px) {
-    .product-wide {
-      padding: 0 0; } }
-  @media (max-width: 767px) {
-    .product-wide img {
-      padding: 2rem 6rem; } }
-  @media (max-width: 767px) {
-    .product-wide img {
-      padding: 1rem 0; } }
+  padding: 1rem 0; }
   .product-wide hgroup {
     color: #ffffff; }
   .product-wide .slider-for img {
     margin: auto;
     display: block;
     width: 50%; }
+    @media (max-width: 991px) {
+      .product-wide .slider-for img {
+        width: 80%; } }
   .product-wide .buttom-line {
     padding-top: 3rem; }
     @media (max-width: 767px) {
@@ -7705,7 +7717,8 @@ section#homeprocess .logo-wrapper .slick-slide {
       border-width: 2px;
       border-radius: 50px;
       border-color: #6B54FF;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      margin: 2rem 0; }
     .process-one .process-wrapper .section-header h3 {
       padding: 0.6rem 0; }
   .process-one .process-wrapper .container {
@@ -7787,8 +7800,7 @@ section#homeprocess .logo-wrapper .slick-slide {
   background-color: unset; }
   @media (max-width: 1199px) {
     .contact .jumbotron {
-      padding-bottom: 120px;
-      margin-top: 50px; } }
+      padding-bottom: 120px; } }
   .contact .jumbotron .map iframe {
     border-radius: 10px;
     height: 560px;
@@ -7806,8 +7818,7 @@ section#homeprocess .logo-wrapper .slick-slide {
   @media (max-width: 767px) {
     .contact .jumbotron {
       background-color: #ffffff;
-      width: 100%;
-      margin-top: 5rem; } }
+      width: 100%; } }
   @media (max-width: 767px) {
     .contact .jumbotron .contact-wrapper {
       height: unset;

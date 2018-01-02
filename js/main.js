@@ -83,6 +83,34 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+          ]
   });
 
   $('.processb-slide').slick({
@@ -91,6 +119,39 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    focusOnSelect: true,
+    responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+          ]
   });
 
   // $('.product-slide').slick({
@@ -113,9 +174,10 @@ $(document).ready(function() {
   });
 
   $('.product-one-time').slick({
-    dots: false,
+    dots: true,
+    arrows: false,
     infinite: true,
-    speed: 300,
+    speed: 800,
     slidesToShow: 1,
     adaptiveHeight: true
   });
@@ -175,12 +237,12 @@ $(document).ready(function() {
   slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1140,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

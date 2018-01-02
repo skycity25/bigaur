@@ -464,7 +464,7 @@ section#homemachine
       .section-header
         position: absolute
         top: 10%
-        left: 15%
+        left: 10%
         width: 40%
         +media-breakpoint-down(lg)
           top: -4%
@@ -512,17 +512,18 @@ section#homemachine
         display: none
     .machine-photo
       position: absolute
-      bottom: 0%
+      bottom: -2%
       width: 55%
       max-width: 800px
       z-index: 744
-      right: 0%
+      right: 2%
       +media-breakpoint-up(xl)
         right: -3%
       +media-breakpoint-up(lg)
         right: -8%
       +media-breakpoint-up(md)
         right: 0
+        top: 0
       +media-breakpoint-down(sm)
         // right: 0%
         width: 80%
@@ -561,7 +562,7 @@ section#homemachine
     .section-header
       text-shadow: 1px 2px 5px rgba($primary,0.5)
     .end-products
-      width: 60%
+      // width: 60%
       +media-breakpoint-down(sm)
         width: 80%
         margin: 0 auto
@@ -569,6 +570,9 @@ section#homemachine
         width: 100%
       img
         width: 100%
+        margin-top: 5rem
+        +media-breakpoint-down(sm)
+          margin-top: unset
     .btn-wrap
       margin-top: 3em
 
@@ -1078,13 +1082,15 @@ section#homeprocess
         // +media-breakpoint-down(md)
         //   padding: 4rem 2rem
         +media-breakpoint-down(md)
-          padding: 0 0 2rem 0
+          padding: 1rem 0 2rem 0
         // +media-breakpoint-down(xs)
         //   padding: 1rem 1rem 3rem 1rem
         img
           padding: 2rem 0.5rem
+          display: block
+          margin: auto
           +media-breakpoint-down(sm)
-            padding: 0 0 2rem 0
+            padding: 1rem 0
           .intro-text
             div
               padding-bottom: 1rem
@@ -1133,8 +1139,12 @@ section#homeprocess
     div
       color: #ffffff
       padding-bottom: 1rem
-  .carousel-item
-    padding-top: 2rem
+  // .carousel-item
+  //   padding-top: 2rem
+  .slide-wrap
+    margin-top: 2rem
+    img
+      padding: 0 0.5rem
     .d-block
       box-shadow: 4px 5px 8px rgba(33%, 33%, 33%, 0.8)
 
@@ -1161,6 +1171,7 @@ section#homeprocess
       visibility: hidden
 
 .product-demo
+  margin-bottom: 2rem
   // .center
   .responsive
     img
@@ -1185,7 +1196,15 @@ section#homeprocess
   .section-header
     h2
       color: #333
-
+  // .slide-setting
+  .product-one-time
+    .slick-dots
+      bottom: -60px
+      button
+        border: 2px solid #C5C5C5
+    .slick-active
+      button
+        border: 2px solid $primary
   .item
     margin-top: 2rem
     .section-header
@@ -1213,6 +1232,8 @@ section#homeprocess
       width: 260px
       +media-breakpoint-down(lg)
         display: inline-block
+      +media-breakpoint-down(sm)
+        width: unset
     .intro-text
       li
         // color: $primary-light
@@ -1284,14 +1305,7 @@ section#homeprocess
 
 .product-wide
   background-color: rgba(41, 22, 110, 0.9)
-  padding: 4rem 0
-  +media-breakpoint-down(sm)
-    padding: 0 0
-  img
-    +media-breakpoint-down(sm)
-      padding: 2rem 6rem
-    +media-breakpoint-down(sm)
-      padding: 1rem 0
+  padding: 1rem 0
   hgroup
     color: #ffffff
   .slider-for
@@ -1299,6 +1313,8 @@ section#homeprocess
       margin: auto
       display: block
       width: 50%
+      +media-breakpoint-down(md)
+        width: 80%
 
   .buttom-line
     padding-top: 3rem
@@ -1375,6 +1391,8 @@ section#homeprocess
         border-radius: 50px
         border-color: $primary-light
         margin-bottom: 2rem
+        +media-breakpoint-down(md)
+        margin: 2rem 0
       h3
         padding: 0.6rem 0
 
@@ -1495,7 +1513,7 @@ section#homeprocess
         display: unset
     +media-breakpoint-down(lg)
       padding-bottom: 120px
-      margin-top: 50px
+      // margin-top: 50px
     .map
       iframe
         border-radius: 10px
@@ -1515,7 +1533,7 @@ section#homeprocess
       // padding: 10rem 0 2rem 0
       background-color: #ffffff
       width: 100%
-      margin-top: 5rem
+      // margin-top: 5rem
     .contact-wrapper
       // position: relative
       // background-color: gray
