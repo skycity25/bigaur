@@ -1,0 +1,62 @@
+extends _layout.jade
+
+block header
+  //- - var page = {current: 'contact_en.html' ,other: 'contact.html', lang: 'en'}
+  - var current = 'contact_en.html' 
+  - var other = 'contact.html'
+  - var lang = 'en'
+  include partials/_header.jade
+
+block content  
+  .page-english
+    section.contact
+      .jumbotron.jumbotron-fluid
+        .contact-wrapper
+          .container
+            .map
+              iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32679.8568328843!2d120.10840357445628!3d31.564860604260254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b4781ecfaf6105%3A0xe81f6784fe346e9c!2z54Sh6Yyr6IOh5Z-t5bel5qWt5ZyS5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1513244687052', frameborder='0', allowfullscreen='')
+    section.contact-intro
+      .container
+        .contact-intro-wrapper
+          .row.justify-content-center.align-items-center
+            .col-10.col-lg-4
+              img(src='images/logo2.png', alt='')
+            .col-12.col-lg-7.offset-lg-1
+              hgroup.section-header
+                h3
+                  | Persistence of products innovation and development.
+                  | Keep ability to adapt and adjust to the market evolution.
+                  | Our insistence on becoming industry bellwether.
+              .btn-wrap
+                a(href='mailto:suport@biguar.net', target='_blank')
+                  button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 請將您的需求提供給我們
+      .slide-wrap
+        ul.process-slider-two
+          li
+            .item
+              .bigaur-intro
+                img(src='images/company-intro1.jpg', alt='')
+          li
+            .item
+              .bigaur-intro
+                img(src='images/06a.jpg', alt='')
+          li
+            .item
+              .bigaur-intro
+                img(src='images/08a.jpg', alt='')
+          li
+            .item
+              .bigaur-intro
+                img(src='images/34a.jpg', alt='')
+          li
+            .item
+              .bigaur-intro
+                img(src='images/35a.jpg', alt='')
+          li
+            .item
+              .bigaur-intro
+                img(src='images/39a.jpg', alt='')
+          li
+            .item
+              .bigaur-intro
+                img(src='images/50a.jpg', alt='')

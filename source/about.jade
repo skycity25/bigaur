@@ -1,0 +1,104 @@
+extends _layout.jade
+
+block header
+  //- - var page = {current: 'about.html' ,other: 'about_en.html', lang: 'tw'}
+  - var current = 'about.html' 
+  - var other = 'about_en.html'
+  - var lang = 'tw'
+  include partials/_header.jade
+
+block content  
+  section.about
+    .jumbotron.jumbotron-fluid.p-0
+      .bg-wrapper.about-wrapper
+        .container
+          .card
+            hgroup.section-header.my-3.my-lg-3
+              h2.mb-0.mb-lg-3 公司簡介
+            .row.align-items-center
+              .col-lg-6.order-1
+                div
+                  img.w-100(src='images/company-intro1.jpg', alt='')
+              .col-lg-6.order-2
+                .p-3.p-md-0
+                  .intro-text
+                    h3.lead.text-primary.mt-0 團隊已具備造紙業30年以上設計規劃經驗，是專業生產機械製造廠家，生產設備精良，檢測手段齊全，注重各類人才培養。
+                    p
+                      | 弼伽機械科技無錫有限公司成立於2017年，公司位於中國江蘇省無錫市胡埭鎮工業區內；地處最發達的長江三角洲。專業生產造紙制漿設備和紙漿模塑設備、模具研發與製造，成為一體目標的技術創造型公司。
+              .w-100.order-3.my-0.my-lg-3
+              .col-lg-6.order-3.order-lg-4
+                .p-3.p-md-0
+                  img.w-100(src='images/company-intro2.jpg', alt='')
+              .col-lg-6.order-4.order-lg-3
+                .p-3.p-md-0
+                  .intro-text
+                    | 基於紙塑成型市場的發展及因應市場環保所需，在於技術開發、生產制漿工藝、生產成型機設備等，而成立此機械廠。目標為紙塑行業內的生產設備，包含制漿處理設備、成型機、後加工的設備等。
+                    br
+                    | 公司始終遵循「注重細節、追求完美」的經營理念，創造高品質的產品，以滿足市場需求。依照客戶需求從工廠流程規劃、設備的設計生產到現場安裝施工，弼伽團隊都有能力以最好的技術與服務為客戶完善規劃。
+  section#spirit-intro.spirit-intro.pt-5
+    .container
+      .spirit-wrapper
+        .row.justify-content-center.align-items-center
+          .col-lg-6
+            hgroup.section-header
+              h2 企業理念
+              h3.lead
+                | 堅持產品不斷創新與發展
+                br
+                | 保有因應市場變化的能力
+                br
+                | 成為行業領導者的企圖心
+            .intro-text
+              p
+                | 弼伽的每一位員工奉行以「積極、務實、創新、合作」為方針，堅持在技術上不斷創新，以創新技術為核心賦予產品新的生命。以市場需求為導向，提供高品質的生產設備，協助客戶生產高質量的產品，是弼伽人的使命。
+          .col-lg-6.order-lg-first
+            img.img-fluid(src='images/spirit-intro.jpg', alt='')
+  section#technology.technology
+    .technology-wrapper
+      .container
+        .row.justify-content-center.align-items-center
+          .col-12.col-md-5.mr-auto
+            hgroup.section-header
+              h2 技術專業
+          .col-11.col-md.offset-md-1
+            .intro-text
+              li.text-white 完全系統整合規劃,原班底造紙業界菁英團隊成員組成
+              li.text-white 設計繪圖採用3D軟件solidworks,設有模擬材料強度及流體力學分析
+              li.text-white 無錫加工中心衛星廠集中,幫助機械加工的調度靈活性
+              li.text-white 成型機零件加工要求精度0.02mm 質檢並嚴格要求
+              li.text-white 電控系統的程序編程plc經驗佳
+              li.text-white 達成高質量要求,創造客戶生產成品高利潤收益
+              li.text-white 成型打樣模具協助技術支持
+              li.text-white 自有安裝試機隊伍堅強,經驗豐富
+    .container-fluid.technology-wide
+      .row.justify-content-center.align-items-center
+        .offset-lg-2.col-lg-3.col-10
+          .intro-text
+            p.text-white
+              | 公司主營產品：碎漿機、磨漿機、單效纖維分離機、壓力篩等整套造紙制漿設備，此外還有紙塑成型機、切邊機、壓盒機等整套紙塑產品生產包裝設備。設備均運行穩定，效率高，安全可靠。
+          .btn-wrap
+            a.btn.btn-danger.btn-lg.btn-block(href='product.html') 完整產品介紹
+        .offset-1.col-lg-6.col-10.mr-auto
+          .slide-wrap.responsive
+            div
+              img.photo(src='images/dm-1.jpg', alt='')
+            div
+              img.photo(src='images/dm-2.jpg', alt='')
+            div
+              img.photo(src='images/dm-3.jpg', alt='')
+            div
+              img.photo(src='images/dm-4.jpg', alt='')
+            div
+              img.photo(src='images/dm-5.jpg', alt='')
+            div
+              img.photo(src='images/dm-6.jpg', alt='')
+            div
+              img.photo(src='images/dm-7.jpg', alt='')
+            div
+              img.photo(src='images/dm-8.jpg', alt='')
+            div
+              img.photo(src='images/dm-9.jpg', alt='')
+            div
+              img.photo(src='images/dm-10.jpg', alt='')
+            div
+              img.photo(src='images/dm-11.jpg', alt='')

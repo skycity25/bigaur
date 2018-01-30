@@ -1,0 +1,89 @@
+{
+  "lang": [
+    {
+      "name": "繁體中文",
+      "url": "index.html"
+    },{
+      "name": "English",
+      "url": "index_en.html"
+    }
+  ],
+  "taiwan": [
+    {
+      "name": "首頁",
+      "url": "index.html",
+      "submenu": false
+    },{
+      "name": "關於弼伽",
+      "url": "about.html",
+      "submenu": [
+         {"name": "公司介紹", "url": "about.html"},
+         {"name": "企業理念", "url": "about.html#spirit-intro"},
+         {"name": "技術專業", "url": "about.html#technology"}
+      ]
+    },{
+      "name": "產品介紹",
+      "url": "product.html",
+      "submenu": [
+        {"name": "產品型錄與介紹", "url": "product.html"},
+        {"name": "紙塑成型機", "url": "product.html#product-second"},
+        {"name": "其他產品", "url": "product.html#otherproduct"},
+        {"name": "客製化服務", "url": "product.html#product-customized"}
+      ]
+    },{
+      "name": "工藝介紹",
+      "url": "process.html",
+      "submenu": [
+        {"name": "A.紙塑廠備漿系統規劃", "url": "process.html"},
+        {"name": "B.造紙廠整廠輸出規劃", "url": "process.html#process-two"}
+      ]
+    },{
+      "name": "聯絡我們",
+      "url": "contact.html",
+      "submenu": false,
+      "company": "弼伽機械科技無錫有限公司",
+      "address": "中國江蘇省無錫市胡埭鎮工業區",
+      "phone": "+86 510 85581036",
+      "mail": "suport@biguar.net"
+    }
+  ],
+  "english": [
+    {
+      "name": "Home",
+      "url": "index_en.html",
+      "submenu": false
+    },{
+      "name": "About",
+      "url": "about.html",
+      "submenu": [
+         {"name": "Company", "url": "about_en.html"},
+         {"name": "Corporate Philosophy", "url": "about_en.html#spirit-intro"},
+         {"name": "Ability", "url": "about_en.html#technology"}
+      ]
+    },{
+      "name": "Products",
+      "url": "product.html",
+      "submenu": [
+        {"name": "Catalog", "url": "product_en.html"},
+        {"name": "紙塑成型機", "url": "product_en.html#product-second"},
+        {"name": "其他產品", "url": "product_en.html#otherproduct"},
+        {"name": "Customized", "url": "product_en.html#product-customized"}
+      ]
+    },{
+      "name": "工藝介紹",
+      "url": "process_en.html",
+      "submenu": [
+        {"name": "A.紙塑廠備漿系統規劃", "url": "process_en.html"},
+        {"name": "B.造紙廠整廠輸出規劃", "url": "process_en.html#process-two"}
+      ]
+    },{
+      "name": "Contact",
+      "url": "contact_en.html",
+      "submenu": false,
+      "company": "BIGUAR MACHINE",
+      "address": "中國江蘇省無錫市胡埭鎮工業區",
+      "phone": "+86 510 85581036",
+      "mail": "suport@biguar.net"
+    }
+  ]
+}

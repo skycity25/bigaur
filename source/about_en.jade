@@ -1,0 +1,114 @@
+extends _layout.jade
+
+block header
+  //- - var page = {current: 'about_en.html' ,other: 'about.html', lang: 'en'}
+  - var current = 'about_en.html' 
+  - var other = 'about.html'
+  - var lang = 'en'
+  include partials/_header.jade
+
+block content  
+  .page-english
+    section.about
+      .jumbotron.jumbotron-fluid.p-0
+        .bg-wrapper.about-wrapper
+          .container
+            .card
+              hgroup.section-header.my-3.my-lg-3
+                h2.mb-0.mb-lg-3 Company Profile
+              .row
+                .col-lg-6.order-1
+                  div
+                    img.w-100(src='images/company-intro1.jpg', alt='')
+                .col-lg-6.order-2
+                  .p-3.p-md-0
+                    .intro-text
+                      h3.lead.text-primary.mt-0
+                        | More than 30 years of design and planning experience in the paper making industry. Biguar Machine Technology Wuxi Co., Ltd. is a professional machine manufacturing company, with high-quality equipment, expert measuring methods, and are dedicated to extensive training and professional development of our employees.
+                      p
+                        | New factory funded in 2017, located in the Hu Tai Industrial Zone, Wuxi, Jiangsu in the Yangtze River Delta Economic Zone - the most developed area of China. We specialize in manufacturing paper making preparation equipment, paper pulp molding equipment, together with development and manufacture of molds.
+                .w-100.order-3.my-0.my-lg-3
+                .col-lg-6.order-3.order-lg-4
+                  .p-3.p-md-0
+                    img.w-100(src='images/company-intro2.jpg', alt='')
+                .col-lg-6.order-4.order-lg-3
+                  .p-3.p-md-0
+                    .intro-text
+                      p
+                        | Due to huge biodegradable product requirement, paper pulp molding market rapid growth in market demand. We setup this new facility to developing new paper molding process technology, manufacturing high efficient stock preparation equipment and high throughput forming machine.
+                        br
+                        | Based upon customers’ needs and demands, we customized everything from the process flow and the design of the factory, the equipment design and production, to the installation and construction of machinery. The Biguar team has the ability to provide the best technology and service to help our customers perfect and successfully carry out their plans.
+    section#spirit-intro.spirit-intro.pt-5
+      .container
+        .spirit-wrapper
+          .row.justify-content-center.align-items-center
+            .col-lg-6
+              hgroup.section-header.mt-0
+                h2.fz-sm Corporate Philosophy
+              .intro-text
+                p.h2.lead.text-primary.mt-0
+                  | Persistence of products innovation and development,Keep ability to adapt and adjust to the market evolution,成為行業領導者的企圖心
+                p
+                  | Each Biguar’s member is following the principle of Aggressive, Pragmatic, Innovate, Cooperate,
+                  br
+                  | constantly innovates the new technology, using the core competence to give the product a whole new life.
+                  br
+                  | Adopting a market oriented approach, providing high-quality production equipment, to help customers produce superior and advantageous products is our mission.
+            .col-lg-6.order-lg-first
+              img.img-fluid(src='images/spirit-intro.jpg', alt='')
+    section#technology.technology
+      .technology-wrapper
+        .container
+          .row.justify-content-center.align-items-center
+            .col-md-6
+              hgroup.section-header
+                h2 Technical Specialist
+            .col-md-6
+              .intro-text
+                li.text-white Complete system integration planning, all team members are the elite in the paper making industry.
+                li.text-white 3D CAD/CAM design system with simulation analysis.
+                li.text-white Best location in China for large & heavy machining, complete satellite factories supply chain.
+                li.text-white World leading forming machine, tolerance up to 0.02mm.
+                li.text-white In-house experienced electrical engineer, customized programmable PCL
+                li.text-white High quality product demand, low operation cost, maintain high profit margin.
+                li.text-white Technical support starting from mold design, sample approval to mass production.
+                li.text-white Well-experienced equipment erection supervision, provide best installation and commissioning for customers.
+      
+      .container-fluid.technology-wide
+        .row.justify-content-center.align-items-center
+          .offset-lg-2.col-lg-3.col-10
+            .intro-text
+              p
+                div
+                  | We supply:
+                div
+                  | Stock preparation equipment for paper making plant and paper pulp molding factory.
+                  | Paper making machine, paper pulp Molding machine with turnkey project planning.
+                  | Finishing equipment such as high speed sheet cutter, slitter rewinder, shape cutter….
+            .btn-wrap
+              a(href='product.html')
+                button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 完整產品介紹
+          .offset-1.col-lg-6.col-10.mr-auto
+            .slide-wrap.responsive
+              div
+                img.photo(src='images/dm-1.jpg', alt='')
+              div
+                img.photo(src='images/dm-2.jpg', alt='')
+              div
+                img.photo(src='images/dm-3.jpg', alt='')
+              div
+                img.photo(src='images/dm-4.jpg', alt='')
+              div
+                img.photo(src='images/dm-5.jpg', alt='')
+              div
+                img.photo(src='images/dm-6.jpg', alt='')
+              div
+                img.photo(src='images/dm-7.jpg', alt='')
+              div
+                img.photo(src='images/dm-8.jpg', alt='')
+              div
+                img.photo(src='images/dm-9.jpg', alt='')
+              div
+                img.photo(src='images/dm-10.jpg', alt='')
+              div
+                img.photo(src='images/dm-11.jpg', alt='')

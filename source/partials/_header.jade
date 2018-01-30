@@ -1,0 +1,120 @@
+mixin langdropdown(link)
+  if (lang == 'tw')
+    li
+      a.disabled
+        i.flag.tw
+        | 繁體中文
+    li.active
+      a(href=link)
+        i.flag.en
+        | English
+  else
+    li
+      a(href=link)
+        i.flag.tw
+        | 繁體中文
+    li
+      a.disabled
+        i.flag.en
+        | English
+
+header#pageHeader.page-header
+  .header-above
+    .container
+      .d-flex
+        .dropdown.lang
+          button#Language.btn.btn-lang.dropdown-toggle(type='button', data-hover='dropdown', data-delay='10', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            if (lang == 'tw')
+              i.flag.tw
+              | 繁體中文
+            else 
+              i.flag.en
+              | English
+            span.caret
+          ul.dropdown-menu(aria-labelledby='Language')
+            +langdropdown(other)
+        
+        ul.toollinks-wrap.ml-auto
+          li
+            a(href='mailto:suport@biguar.net', target='_blank')
+            i.material-icons.mr-1(aria-hidden='true')
+              | phone
+            | suport@biguar.net
+          li
+            a(href='tel:+8651085581036')
+              i.material-icons.mr-1(aria-hidden='true')
+                | mail_outline
+              | +86 510 85581036
+  .main-navi
+    .container
+      nav.navbar.navbar-expand-lg.navbar-light.d-flex.px-0
+        a.navbar-toggler(href='#menu', data-toggle="collapse", data-target='#menu', aria-controls='menu', aria-expanded='false', aria-label='Menu Trigger')
+          span.navbar-toggler-icon
+        h1.navbar-brand.mx-auto
+          a(href='index.html')
+            span.text-hide 弼伽機械科技無錫有限公司
+            img.img-fluid.hidden-sm(src='images/logo_nav.png', alt='弼伽機械科技無錫有限公司')
+            img.img-fluid.visible-sm(src='images/logo_text.png', alt='弼伽機械科技無錫有限公司')
+        .collapse.navbar-collapse(id='')
+          ul.nav.navbar-nav.ml-auto
+            if (lang == 'tw')
+              each item in menus.taiwan
+                if item.submenu
+                  if (current == item.url)
+                    li.item.dropdown.active
+                      a.dropdown-toggle(href=item.url, data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', data-hover='dropdown', data-delay='10')
+                        span.text #{item.name}
+                        b.caret
+                      ul.dropdown-menu.multi-level(role='menu')
+                        each subitem in item.submenu
+                          li 
+                            a(href=subitem.url) #{subitem.name}
+                  else
+                    li.item.dropdown
+                      a.dropdown-toggle(href=item.url, data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', data-hover='dropdown', data-delay='10')
+                        span.text #{item.name}
+                        b.caret
+                      ul.dropdown-menu.multi-level(role='menu')
+                        each subitem in item.submenu
+                          li 
+                            a(href=subitem.url) #{subitem.name}
+                else
+                  if (current == item.url)
+                    li.item.active
+                      a(href=item.url)
+                        span.text #{item.name}
+                  else
+                    li.item 
+                      a(href=item.url)
+                        span.text #{item.name}
+            else
+              each item in menus.english
+                if item.submenu
+                  if (current == item.url)
+                    li.item.dropdown.active
+                      a.dropdown-toggle(href=item.url, data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', data-hover='dropdown', data-delay='10')
+                        span.text #{item.name}
+                        b.caret
+                      ul.dropdown-menu.multi-level(role='menu')
+                        each subitem in item.submenu
+                          li 
+                            a(href=subitem.url) #{subitem.name}
+                  else
+                    li.item.dropdown
+                      a.dropdown-toggle(href=item.url, data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', data-hover='dropdown', data-delay='10')
+                        span.text #{item.name}
+                        b.caret
+                      ul.dropdown-menu.multi-level(role='menu')
+                        each subitem in item.submenu
+                          li 
+                            a(href=subitem.url) #{subitem.name}
+                else
+                  if (current == item.url)
+                    li.item.active
+                      a(href=item.url)
+                        span.text #{item.name}
+                  else
+                    li.item 
+                      a(href=item.url)
+                        span.text #{item.name}
+            

@@ -1,0 +1,444 @@
+extends _layout.jade
+
+block header
+  //- - var page = {current: 'product_en.html' ,other: 'product.html', lang: 'en'}
+  - var current = 'product_en.html' 
+  - var other = 'product.html'
+  - var lang = 'en'
+  include partials/_header.jade
+
+block content  
+  .page-english
+    section.product
+      .jumbotron.jumbotron-fluid
+        .container-fluid
+          .container
+            .-wrapper
+              .row
+    // <介紹輪播>
+    section.product-first
+      .product-wrapper
+        .container
+          hgroup.section-header
+            h2 Stock Preparation Equipment
+          .slide-wrap.product-one-time
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1a.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 O/D type Hydra Pulper
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#')
+                        | O type hydra pulper is round shape body design, suitable for virgin pulp process.
+                    li
+                      a(href='#')
+                        | D type hydra pulper is D shape body design, suitable for waste paper application.
+                    li
+                      a(href='#')
+                        | The hydra pulper has a very powerful agitator with blades at the bottom which breaks up the pulp or paper bales into small pieces.
+                    li
+                      a(href='#') Combine with Slush Sorter, can operate as continuous stock supply system.
+                    li
+                      a(href='#')
+                        | All blades and screen are made of special steel alloy, increase wear resistance and lifetime.
+                    li
+                      a(href='#') Multiple trench design bottom screen plate, increase shearing capability.
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1b.png', alt='')
+                .col-10.col-xl-7.order-xl-first
+                  hgroup.section-header
+                    h3 S type Hydra Pulper
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#')
+                        | S type rotor is for high concentration pulp condition, and low power consumption.
+                    li
+                      a(href='#')
+                        | Suitable different types of pulp and waste paper, easy design for horizontal or vertical body structure.
+                    li
+                      a(href='#') Good choice for broke storage chest
+                    li
+                      a(href='#')
+                        | Stator blade installed on screen, reach max. shearing force, suitable for wet strength paper dispersing.
+                    li
+                      a(href='#')
+                        | Rotor and stator blades are made of special steel alloy, increase wear resistance and lifetime.
+                    li
+                      a(href='#') Multiple trench design bottom screen plate, increase shearing capability.
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1c.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 Slush Sorter
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#')
+                        | Design to process hydra pulper reject, as the secondary pulper. Increase hydra pulper process capacity.
+                    li
+                      a(href='#')
+                        | Pneumatic control inlet valve installed, programmable process control, reduce fine fiber reject ratio.
+                    li
+                      a(href='#')
+                        | Inlet consistency 3-4%, using flash water wash rotor and screen to reclaim fiber from slush. Remain slash goes to reject outlet.
+                    li
+                      a(href='#') Easy door open design, easy to maintain.
+                    li
+                      a(href='#')
+                        | Rotor blades are made of special steel alloy, increase wear resistance and lifetime.
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1d.png', alt='')
+                .col-10.col-xl-7.order-xl-first
+                  hgroup.section-header
+                    h3 Slush Separator
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#') Separate different density impurity to different outlet, reclaim fine fiber.
+                    li
+                      a(href='#')
+                        | Light impurities go to center reject outlet, heavy impurities go to lower reject outlet.
+                    li
+                      a(href='#')
+                        | Both light and heavy reject outlets equip with pneumatic control valves, PCL programmable control increase efficiency and capacity.
+                    li
+                      a(href='#')
+                        | Can be installed after hydra pulper as the secondary puler and screen, increase hydra pulper capacity.
+                    li
+                      a(href='#')
+                        | Rotor blades are made of special steel alloy, increase wear resistance and lifetime.
+                    li
+                      a(href='#')
+                        | Inlet consistency 3-4%, high consistency process keeps coarse impurities helpful to further process. Outlet consistency 5-15% depends on raw material.
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1e.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 Conical Refiner
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#')
+                        | Conical Refiner is a machine used in the refining of pulp in the papermaking process, it controls the fibrillation and freeness, which are very important factors of paper characters.
+                    li
+                      a(href='#')
+                        | Conical blade design draws larger refining area to achieve stable and better refining.
+                    li
+                      a(href='#')
+                        | Gear reducer motor control blades gap. Hi/Lo feeding speed control to reduce waste power loading. DCS control integrable.
+                    li
+                      a(href='#')
+                        | Refining blade is special steel alloy casted, increase wear resistance and lifetime.
+                    li
+                      a(href='#') Lubrication / Oil Circulating System for bearing.
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1f.png', alt='')
+                .col-10.col-xl-7.order-xl-first
+                  hgroup.section-header
+                    h3 Conical Deflaker
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#') Before fiber refining, deflaker brings about optimal fiber separation.
+                    li
+                      a(href='#')
+                        | Stage blade design draws larger deflaking area to achieve stable and better fiberization.
+                    li
+                      a(href='#')
+                        | Gear reducer motor control blades gap. Offer manual or electrical mode option. Electrical mode can fine adjust blade loading feeding reduce waste power loading. DCS control integrable.
+                    li
+                      a(href='#')
+                        | Deflaking blade is special steel alloy casted, increase wear resistance and lifetime.
+                    li
+                      a(href='#') Lubrication / Oil Circulating System for bearing.
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1g.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 Reject Separator
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    li
+                      a(href='#')
+                        | Design to reclaim fiber from process reject waste. Obtain high stock preparation yield.
+                    li
+                      a(href='#')
+                        | High speed rotor blade, cylinder screen and high pressure cleaning water re-sorting remain fiber from any kind of reject waste.
+                    li
+                      a(href='#') Suitable for coarse/fine screen tail, replace conventional vibrating screen.
+                    li
+                      a(href='#') No pressure, enclose chamber operation. Easy and clean.
+                    li
+                      a(href='#')
+                        | Inlet consistency 1-2%, outlet consistency 15-20%, fiber reclaim ratio up to 70%.
+                    li
+                      a(href='#') Rotor blade made of special stainless steel with high-speed dynamic balancing.
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-4
+                  .row
+                    .col-6
+                      img.photo(src='images/product_1h_1.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 Cylinder Press
+                    .col-6
+                      img.photo(src='images/product_1h_2.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 Plug Screw
+                    .col-6
+                      img.photo(src='images/product_1h_3.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 Shreeder
+                    .col-6
+                      img.photo(src='images/product_1h_4.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 Preheater
+                    .col-6
+                      img.photo(src='images/product_1h_5.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 Infeeder
+                    .col-6
+                      img.photo(src='images/product_1h_6.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 Disperser
+                .col-10.col-xl-6.offset-xl-1
+                  div
+                    img.photo(src='images/product_1h.png', alt='')
+                  hgroup.section-header
+                    h3 Disperser System
+                  .intro-text
+                    p
+                      div
+                        | The waste paper contains many types of light and heavy impurities, and other substances like asphalt, wax, oil, and other heat-melting or pressure sensitive adhesive. If these heat melting impurities stay in the pulp stock, it would stick onto the wire, felt, roll and the dryer surface. Those impurities cause tearing, holes and other problems of paper, thus these heat-melting impurities should be processed.
+                      div
+                        | The disperser system uses both the mechanical force and high temperature steam to dissociate and micronized the impurities in pulp stock. The impurities will be dissolved into invisible micro dot after up to 100°C process, it will be mixed evenly within the fiber so they won't be seen in the finish product.
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1i.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 Centripetal Pressure Screen
+                    .intro-title
+                      h4 Features & Application
+                  .intro-text
+                    h4 We have two types pressure screen: PH / PS
+                    li
+                      a(href='#')
+                        | “PH pressure screen is using hole type screen basket. Mainly for screening coarse impurity. Base on different pulp stock and process, the hole size is variable and operation consistency is 1% - 4%.
+                    li
+                      a(href='#')
+                        | PS pressure screen is using slot type screen basket. Mainly for screening fine impurity. According the cleanness requirement, various slot size and type are available.
+                        div
+                          | Centripetal pressure screen working principle is the rotor carries multiple Scrasper foils, when the rotor spin, the foils passing screen basket surface, due to the foil shape design it creates positive and negative pressure, collect pulp fiber and reject the impurities. All wet parts are made of stainless steel.
+                          | Scrasper foil is made of high precision stainless steel cast. Adjustable gap between foil and basket suitable various material and process. Rotor is dynamic balancing achieves optimum operation efficiency.
+    // <型錄輪播>
+    section.product-demo
+      .slide-wrap.responsive
+        div
+          img.photo(src='images/dm-1.jpg', alt='')
+        div
+          img.photo(src='images/dm-2.jpg', alt='')
+        div
+          img.photo(src='images/dm-3.jpg', alt='')
+        div
+          img.photo(src='images/dm-4.jpg', alt='')
+        div
+          img.photo(src='images/dm-5.jpg', alt='')
+        div
+          img.photo(src='images/dm-6.jpg', alt='')
+        div
+          img.photo(src='images/dm-7.jpg', alt='')
+        div
+          img.photo(src='images/dm-8.jpg', alt='')
+        div
+          img.photo(src='images/dm-9.jpg', alt='')
+        div
+          img.photo(src='images/dm-10.jpg', alt='')
+        div
+          img.photo(src='images/dm-11.jpg', alt='')
+    // <紙塑輪播>
+    section#product-second.product-second
+      .container-fluid.product-wrapper
+        .container
+          .row.justify-content-center.align-items-center
+            .col
+              hgroup.section-header
+                h2 Paper Pulp Molding Machine
+              .row.justify-content-center.align-items-center
+                .col-10.col-lg-6.offset-lg-1
+                  .slide-wrap.papperproduct-one-time
+                    .photo
+                      img.img-fluid(src='images/papper-machine-1.png', alt='')
+                    .photo
+                      img.img-fluid(src='images/papper-machine-2.png', alt='')
+                    .photo
+                      img.img-fluid(src='images/papper-machine-3.png', alt='')
+                .col-10.col-lg-4.mr-lg-auto
+                  hgroup.section-header
+                    .title-border
+                      h3 動作原理
+                  .intro-text
+                    ul
+                      li
+                        a(href='#') Fix Weight Wet Forming
+                      li
+                        i.material-icons 
+                      li
+                        a(href='#') Dehydration
+                      li
+                        i.material-icons 
+                      li
+                        a(href='#') Transfer to Drying Mold
+                      li
+                        i.material-icons 
+                      li
+                        a(href='#') Heat Press Forming
+                      li
+                        i.material-icons 
+                      li
+                        a(href='#') Transfer to Discharge Conveyor
+                      li
+                        i.material-icons 
+                      li
+                        a(href='#') Looping
+      .container-fluid.product-wide
+        hgroup.section-header
+          h2 Paper Pulp Molding Products
+        .slide-wrap
+          div
+            ul.slider-for
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-1.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-2.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-3.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-4.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-5.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-6.png', alt='')
+          div
+            ul.slider-nav
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-1.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-2.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-3.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-4.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-5.png', alt='')
+              li
+                .item
+                  .bigaur-intro
+                    img(src='images/papper-product-6.png', alt='')
+    // <其他輪播>
+    section#otherproduct.spacer
+      .container
+        .section-header
+          h2 其他產品
+        .offer-wrapper
+          .row
+            .col-md-3.col-6
+              .fligth-item.height6
+                .item-photo
+                  img.img-fluid(alt=' ', src='images/other-slide-2.jpg')
+                // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+              .fligth-item.height6
+                .item-photo
+                  img.img-fluid(alt=' ', src='images/other-slide-1.jpg')
+                // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+            .col-md-3.col-6
+              .fligth-item.height4
+                .item-photo
+                  img.img-fluid(alt=' ', src='images/other-slide-3.jpg')
+                // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+              .fligth-item.height8
+                .item-photo
+                  img.img-fluid(alt=' ', src='images/other-slide-4.jpg')
+                // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+            .col-md-6.col-12
+              .fligth-item.height8.mb-2
+                .item-photo
+                  img.img-fluid(alt=' ', src='images/other-slide-5.jpg')
+                // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+              .row
+                .col-6
+                  .fligth-item.height4
+                    .item-photo
+                      img.img-fluid(alt=' ', src='images/other-slide-6.jpg')
+                    // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+                .col-6
+                  .fligth-item.height4
+                    .item-photo
+                      img.img-fluid(alt=' ', src='images/other-slide-7.jpg')
+                    // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+    // <客製化>
+    section#product-customized.product-customized
+      .container-fluid
+        .container
+          .customized-wrapper
+            .row.justify-content-center.align-items-center
+              .col-10.col-lg-5
+                img.img-fluid(src='images/papper-machine-3.png', alt='')
+              .col-10.col-lg-6.offset-lg-1
+                hgroup.section-header
+                  h2 Customized Service
+                .customized-text
+                  p Please contact us for detail
+                .btn-wrap
+                  a(href='contact.html')
+                    button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 聯絡我們

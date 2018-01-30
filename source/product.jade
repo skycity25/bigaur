@@ -1,0 +1,410 @@
+extends _layout.jade
+
+block header
+  //- - var page = {current: 'product.html' ,other: 'product_en.html', lang: 'tw'}
+  - var current = 'product.html' 
+  - var other = 'product_en.html'
+  - var lang = 'tw'
+  include partials/_header.jade
+
+block content  
+  section.product
+    .jumbotron.jumbotron-fluid
+    // <介紹輪播>
+  section.product-first
+    .product-wrapper
+      .container
+          hgroup.section-header
+            h2 產品型錄與介紹
+          .slide-wrap.product-one-time
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1a.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 O/D-Type 水力碎漿機
+                    .intro-title
+                      h4 O/D型碎漿機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#') O 型碎漿機桶身為圓型設計，較適合用於原木漿的碎解散漿。
+                    li
+                      a(href='#') D 型碎漿機桶身為 D 型設計，擾流效果佳適合用於廢紙的碎解散漿。
+                    li
+                      a(href='#') 水力碎漿機原理，是利用旋轉刀翼造成水流與篩板的剪切，而產生碎漿的效果。
+                    li
+                      a(href='#') 水力碎漿機，也可搭配我司的雜質分離機一起使用，可連續投料自動排渣提高產量。
+                    li
+                      a(href='#') 迴轉刀與篩板均採用特殊合金鋼制造，材質耐磨性高可增加使用壽命。
+                    li
+                      a(href='#') 我司碎漿機篩板為多片溝槽式設計，可提高碎漿時剪切的能力。
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1b.png', alt='')
+                .col-10.col-xl-7.order-xl-first
+                  hgroup.section-header
+                    h3 S-Type 水力碎漿機
+                    .intro-title
+                      h4 S型濕強紙碎漿機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#') S 轉子的優點，主要是滿足高濃度的碎漿與低能耗的動力。
+                    li
+                      a(href='#') 適用於漿板和各類廢紙的碎解，可用於立式與臥式的碎漿機上。
+                    li
+                      a(href='#') 此碎漿機更可用於紙機下方損紙池，做為損紙碎漿機使用。
+                    li
+                      a(href='#') 高濕強紙的碎解原理，在篩板上有固定式剪切塊與轉子搭配，產生更大的碎漿效果。
+                    li
+                      a(href='#') 迴轉刀與定刀塊均採用特殊合金鋼制造，材質耐磨性高可增加使用壽命。
+                    li
+                      a(href='#') 我司碎漿機篩板為多片溝槽式設計，可提高碎漿時剪切的能力。
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1c.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 雜質分離機
+                    .intro-title
+                      h4 雜質分離機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#') 雜質分離機的用途，主要是用來處理水力碎漿機內的廢渣，碎漿的同時渣料也同時排到分離機內做二次碎解，以提高水力碎漿機連續碎漿的能力，進而提升產量。
+                    li
+                      a(href='#') 連接碎漿機渣排口與分離機之間,都有氣動閥門控制，配合分離機自動程序控制達到進漿、篩選、洗漿、排渣，批次動作進而使排出的渣含漿量降到最低。
+                    li
+                      a(href='#') 入口濃度在3-4%分離機內會注入清洗水配合迴轉刀盤達到漿與渣料的分離，漿通過篩板到漿池，廢渣由下方排渣口排出。
+                    li
+                      a(href='#') 我司雜質分離機的前端門板，設計為旋轉門式固定，方便日後保養及維修。
+                    li
+                      a(href='#') 我司迴轉刀為特殊鋼材質耐磨性佳，配合篩板達到最佳的碎解與篩選。
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1d.png', alt='')
+                .col-10.col-xl-7.order-xl-first
+                  hgroup.section-header
+                    h3 纖維分離機
+                    .intro-title
+                      h4 纖維分離機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#') 設計的原理是依據輕重渣的比重差，以離心方式將雜質輕重分離，各由排渣口排出。
+                    li
+                      a(href='#') 輕渣比重輕由中間排渣口排出，重渣比重高在筒體外旋轉由下方重渣口排出。
+                    li
+                      a(href='#') 輕重渣排出口都有氣動閥門控制，可依照原材料含渣比例的不同，來調整輕重渣排放的時間，操作都由PLC自動控制開與關可提高得漿率，也可提高產量。
+                    li
+                      a(href='#') 纖維分離機安裝於碎漿機後，可當粗篩使用也等於二次碎漿，提高碎漿機處理能力。
+                    li
+                      a(href='#') 我司迴轉刀為特殊鋼材質耐磨性佳，配合篩板達到最佳的碎解與篩選。
+                    li
+                      a(href='#') 入口濃度在3-4%。高濃度的處理使渣不被碎解，後段容易處理，排渣率在5-15% 排渣率會因廢紙原料而改變。
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1e.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 錐形磨漿機
+                    .intro-title
+                      h4 錐形磨漿機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#')
+                        | 錐型磨漿機的用途，在於對各種原料進行磨漿包含木漿與廢紙，經過磨漿機後可提高漿的均整(分絲、帚化)和提高漿的扣解度，對成品紙有提高抗張力、耐折度、挺度⋯⋯等提高紙張品質。
+                    li
+                      a(href='#') 錐形磨的磨漿區域較長，漿的滯留時間也較久，施力平均以達到穩定的纖維品質。
+                    li
+                      a(href='#') 磨漿機的進退刀機構，採用減速機控制進退刀分為快速和慢速兩模式，可精密的控制進刀負載減少無效功率，可連接DCS系統達到自動控制磨漿，使磨漿的效率和品質穩定。
+                    li
+                      a(href='#') 磨漿刀分為內外刀，均採用特殊耐磨材料精密鑄造完成，可增加使用壽命。
+                    li
+                      a(href='#') 磨漿均有自動循環過濾系統，可提高軸承壽命，減少磨損提高效率。
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1f.png', alt='')
+                .col-10.col-xl-7.order-xl-first
+                  hgroup.section-header
+                    h3 錐形疏解機
+                    .intro-title
+                      h4 錐形疏解機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#') 錐型疏解機的用途，在於對各種原料進行磨漿前的處理包含木漿與廢紙，經過疏解機後可幫助漿料的均整不結球。
+                    li
+                      a(href='#') 疏解機的刀盤採用階梯狀的設計，過漿時增加了滯留時間，施力平均以達到穩定的纖維分散作用。
+                    li
+                      a(href='#') 疏解機的進退刀機構，採用減速機控制進退刀可分為手動和電動兩模式，電動可精密的控制進刀負載減少無效功率，可連接DCS系統達到自動控制。
+                    li
+                      a(href='#') 疏解刀分為內外刀，均採用特殊耐磨材料精密鑄造完成，可增加使用壽命。
+                    li
+                      a(href='#') 大型號的疏解機有自動循環過濾系統，可提高軸承壽命，減少磨損提高效率。
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1g.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 排渣分離機
+                    .intro-title
+                      h4 排渣分離機的特性及用途
+                  .intro-text
+                    li
+                      a(href='#') 一般在漿料排渣時，還有一些漿存在於渣內造成原料的浪費，排渣分離機可將廢渣內纖維回收，也提高得漿率降低成本。
+                    li
+                      a(href='#') 分離機設計的原理，是靠高速迴轉設備內轉軸上的刀片，將渣再次分解透過篩板過濾及高壓清洗水作清洗渣料，達到渣與漿的分離將漿料回收，渣料再由排渣口排出。
+                    li
+                      a(href='#') 本機適合用於粗篩的尾篩，也可用於精篩的的尾篩取代傳統震動篩的使用。
+                    li
+                      a(href='#') 僅需常壓操作，操作空間為密閉式所以不會有污穢物的飛濺。
+                    li
+                      a(href='#') 入口濃度為1-2%，排渣出口濃度為15-20%漿料回收率可達70%以上。
+                    li
+                      a(href='#') 內迴轉刀片為精密加工的特殊不銹鋼，不生銹且耐磨，在高速迴轉下經過動平衡校正以確保設備的使用壽命。
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-4
+                  .row
+                    .col-6
+                      img.photo(src='images/product_1h_1.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 壓漿機
+                    .col-6
+                      img.photo(src='images/product_1h_2.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 料塞螺旋
+                    .col-6
+                      img.photo(src='images/product_1h_3.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 破碎螺旋
+                    .col-6
+                      img.photo(src='images/product_1h_4.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 預熱螺旋
+                    .col-6
+                      img.photo(src='images/product_1h_5.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 餵料螺旋
+                    .col-6
+                      img.photo(src='images/product_1h_6.jpg', alt='')
+                      hgroup.photo-header
+                        .photo-title
+                          h4 熱分散機
+                .col-10.col-xl-6.offset-xl-1
+                  div
+                    img.photo(src='images/product_1h.png', alt='')
+                  hgroup.section-header
+                    h3 熱分散系統
+                  .intro-text
+                    p
+                      div
+                        | 廢紙中除含有各類輕、重雜質外,還含有瀝青、石蠟、油脂和各種熱熔性或壓敏性的膠黏劑等物質。這些熱熔性的雜質若留在漿料中不除去，則在抄紙時易黏在網子、毛布、棍子或烘缸表面上，造成紙頁斷頭或出現孔洞、掉毛等紙病。因此必須對這些熱熔性雜質進行處理。
+                      div
+                        | 處理熱熔性雜質的方法主要是“熱分散法”。熱分散就是採用機械與熱作用相結合的方法，將經過離解和淨化的廢紙漿送入熱分散系統，在100℃的溫度下使熱熔物雜質溶解分散成肉眼看不見的微粒，並均勻的混於纖維之間，而在最後的成品中不容易察覺出來。
+            .item
+              .row.justify-content-center.align-items-center
+                .col-10.col-xl-5
+                  img.photo(src='images/product_1i.png', alt='')
+                .col-10.col-xl-7
+                  hgroup.section-header
+                    h3 內流式壓力篩
+                    .intro-title
+                      h4 內流式壓力篩的特性及用途
+                  .intro-text
+                    h4 本公司之密閉型壓力篩有二種：
+                    li
+                      a(href='#') “PH”代表使用圓孔型篩孔，主要用於篩除紙漿中之粗渣，依孔徑之不同可應用於各種製漿流程中。使用濃度範圍在1%~4%之間，依孔徑大小及原料流程不同而有所改變。
+                    li
+                      a(href='#')
+                        | “PS”代表使用溝型篩孔，主要用於篩除紙漿中較細之殘渣，依篩溝大小之不同可應用於須高清潔度之紙漿原料處理。使用濃度範圍在0.2%~1.5%之間，依篩溝之型式大小及原料流程不同而有所改變。
+                        div
+                          | 基本上PH及PS壓力篩是利用多片小翼板(Scraper)在篩網之孔溝上迴轉，產生正向及逆向之壓力，藉以使紙漿通過篩網及清除殘留在篩網上之殘渣。機體部份主要採用不鏽鋼製造，小翼板採用高精密度不鏽鋼鑄造，每片小翼板均經過嚴格之品管，務使多片小翼板在迴轉中，得到真正之平衡。小翼板與篩網之間隙為可調式，以通用於處理各種不同之漿料，迴轉體需經過平衡校正以求運轉時得到最平穩之狀況。
+    // <型錄輪播>
+  section.product-demo
+    .slide-wrap.responsive
+      div
+        img.photo(src='images/dm-1.jpg', alt='')
+      div
+        img.photo(src='images/dm-2.jpg', alt='')
+      div
+        img.photo(src='images/dm-3.jpg', alt='')
+      div
+        img.photo(src='images/dm-4.jpg', alt='')
+      div
+        img.photo(src='images/dm-5.jpg', alt='')
+      div
+        img.photo(src='images/dm-6.jpg', alt='')
+      div
+        img.photo(src='images/dm-7.jpg', alt='')
+      div
+        img.photo(src='images/dm-8.jpg', alt='')
+      div
+        img.photo(src='images/dm-9.jpg', alt='')
+      div
+        img.photo(src='images/dm-10.jpg', alt='')
+      div
+        img.photo(src='images/dm-11.jpg', alt='')
+    // <紙塑輪播>
+  section#product-second.product-second
+    .product-wrapper
+      .container
+        .row.justify-content-center.align-items-center
+          .col
+            hgroup.section-header
+              h2 紙塑成型機
+            .row.justify-content-center.align-items-center
+              .col-10.col-lg-6.offset-lg-1
+                .slide-wrap.papperproduct-one-time
+                  .photo
+                    img.img-fluid(src='images/papper-machine-1.png', alt='')
+                  .photo
+                    img.img-fluid(src='images/papper-machine-2.png', alt='')
+                  .photo
+                    img.img-fluid(src='images/papper-machine-3.png', alt='')
+              .col-10.col-lg-4.mr-lg-auto
+                hgroup.section-header
+                  .title-border
+                    h3 動作原理
+                .intro-text
+                  ul
+                    li
+                      a(href='#') 定克重吸漿成型脫水
+                    li
+                      i.material-icons 
+                    li
+                      a(href='#') 濕胚整型脫水
+                    li
+                      i.material-icons 
+                    li
+                      a(href='#') 移轉到加熱模具
+                    li
+                      i.material-icons 
+                    li
+                      a(href='#') 熱加壓成型
+                    li
+                      i.material-icons 
+                    li
+                      a(href='#') 移轉到出料輸送帶
+                    li
+                      i.material-icons 
+                    li
+                      a(href='#') 自動循環生產
+    .product-wide
+      hgroup.section-header
+        h2 紙塑成品展示
+      .slide-wrap
+        div
+          ul.slider-for
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-1.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-2.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-3.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-4.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-5.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-6.png', alt='')
+        div
+          ul.slider-nav
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-1.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-2.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-3.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-4.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-5.png', alt='')
+            li
+              .item
+                .bigaur-intro
+                  img(src='images/papper-product-6.png', alt='')
+    // <其他輪播>
+  section#otherproduct.spacer
+    .container
+      .section-header
+        h2 其他產品
+      .offer-wrapper
+        .row
+          .col-md-3.col-6
+            .fligth-item.height6
+              .item-photo
+                img.img-fluid(alt=' ', src='images/other-slide-2.jpg')
+              // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+            .fligth-item.height6
+              .item-photo
+                img.img-fluid(alt=' ', src='images/other-slide-1.jpg')
+              // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+          .col-md-3.col-6
+            .fligth-item.height4
+              .item-photo
+                img.img-fluid(alt=' ', src='images/other-slide-3.jpg')
+              // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+            .fligth-item.height8
+              .item-photo
+                img.img-fluid(alt=' ', src='images/other-slide-4.jpg')
+              // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+          .col-md-6.col-12
+            .fligth-item.height8.mb-2
+              .item-photo
+                img.img-fluid(alt=' ', src='images/other-slide-5.jpg')
+              // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+            .row
+              .col-6
+                .fligth-item.height4
+                  .item-photo
+                    img.img-fluid(alt=' ', src='images/other-slide-6.jpg')
+                  // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+              .col-6
+                .fligth-item.height4
+                  .item-photo
+                    img.img-fluid(alt=' ', src='images/other-slide-7.jpg')
+                  // <div class="mask"><a class="btn btn-outline-quote" data-target="#productModal" data-toggle="modal" href="">說明文字</a></div>
+    // <客製化>
+  section#product-customized.product-customized
+    .container
+        .customized-wrapper
+          .row.justify-content-center.align-items-center
+            .col-10.col-lg-5
+              img.img-fluid(src='images/papper-machine-3.png', alt='')
+            .col-10.col-lg-6.offset-lg-1
+              hgroup.section-header
+                h2 客製化產品介紹
+              .customized-text
+                p 歡迎洽詢了解更多客製化服務。
+              .btn-wrap
+                a(href='contact.html')
+                  button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 聯絡我們

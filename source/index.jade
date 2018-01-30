@@ -1,0 +1,174 @@
+extends _layout.jade
+
+block header
+  - var current = 'index.html' 
+  - var other = 'index_en.html'
+  - var lang = 'tw'
+  include partials/_header.jade
+
+block content
+  section.main-slider
+    .container-wide
+      #heroBanner.banner-wrapper
+        .item
+          a(href='#')
+            img(src='images/34.jpg', alt='')
+        .item
+          a(href='#')
+            img(src='images/04.jpg', alt='')
+        .item
+          a(href='#')
+            img(src='images/03.jpg', alt='')
+        .item
+          a(href='#')
+            img(src='images/02.jpg', alt='')
+        .item
+          a(href='#')
+            img(src='images/38.jpg', alt='')
+        .item
+          a(href='#')
+            img(src='images/50.jpg', alt='')
+  // <關於弼伽>
+  section#homecompany.home-company
+    .container
+      .company-wrapper
+        hgroup.section-header
+          h2 企業理念
+          h3 積極 務實 創新 合作
+        .spirit
+          ul.row
+            li.col-sm-4
+              .item
+                .photo
+                  img.img-fluid(src='images/index_icon_new.svg', alt='')
+                p 堅持不斷創新發展產品
+            li.col-sm-4
+              .item
+                .photo
+                  img.img-fluid(src='images/index_icon_change.svg', alt='')
+                p 市場適應與應變能力
+            li.col-sm-4
+              .item
+                .photo
+                  img.img-fluid(src='images/index_icon_leader.svg', alt='')
+                p 承諾成為行業領導者
+        .btn-wrap.py-3
+          .row
+            .col-md-4.col-8.mx-auto
+              a(href='about.html')
+                button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 了解更多關於弼伽
+  // <產品介紹>
+  section#homemachine.home-machine
+    .container-wide
+      .machine-wrapper
+        .container
+          hgroup.section-header
+            img.logo(src='images/logo.png', alt='')
+            h2
+              .block.bh1
+                span 跳脫
+                | 傳統機台
+              .block.bh2
+                span 提升
+                | 作業效率
+          .speacer
+            img.w-100(src='images/machine-speacer.png')
+        .machine-photo
+          img.img-fluid(src='images/machine3.png', alt='')
+    .triangle
+  
+  section#homeproduct.home-product
+    .container
+      .product-wrapper
+        hgroup.section-header
+          h2 增加良率
+          h3 幫助打造更精緻產品
+        .end-products
+          img.item2(src='images/product.png', alt='')
+        .btn-wrap.py-3
+          .row
+            .col-md-4.col-8.mx-auto
+              a(href='product.html')
+                button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 了解更多弼伽商品
+  // <工藝介紹>
+  section#homeprocess.home-process
+    .container-wide
+      .process-wrapper
+        .process-intro
+          .process-box
+            hgroup.section-header
+              h2 工藝介紹
+              h3 具備最專業的工藝系統
+            .process-text
+              p “品質並不是一種意外；那是經常要依靠才智所做的努力才能獲致的結果” John Ruskin
+              p 一個項目的成功與否，通常決定在初期的設計是否正確。錯誤的設計將導致更多的時間、人力、物力及財力的投入。
+              p 弼伽團隊以多年成功的經驗，協助我們的客戶完整的工藝流程設計規劃。
+            .btn-wrap.py-5
+              .row.justify-content-center.align-items-center
+                .col-md-11.col-8.center-block
+                  a(href='process.html')
+                    button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 更多工藝介紹
+        .slide-wrap
+          .block
+            ul.process-slider
+              li
+                .item
+                  .figure
+                    img(src='images/process-item1.jpg', alt='')
+                  .text
+                    p 木漿處理系統
+              li
+                .item
+                  .figure
+                    img(src='images/process-item2.jpg', alt='')
+                  .text
+                    p 廢紙處理系統
+              li
+                .item
+                  .figure
+                    img(src='images/process-item3.jpg', alt='')
+                  .text
+                    p 廢紙分散處理系統
+              li
+                .item
+                  .figure
+                    img(src='images/process-item4.jpg', alt='')
+                  .text
+                    p 廢紙脫墨處理系統
+              li
+                .item
+                  .figure
+                    img(src='images/process-item5.jpg', alt='')
+                  .text
+                    p 造紙廠整廠輸出規劃
+  // <聯絡我們>
+  section#homecontact.home-contact
+      .contact-wrapper
+        hgroup.section-header
+          h2 聯絡弼伽
+          h3 建立優質的合作關係
+        .container
+          .row.justify-content-center.align-items-center
+            .col-md-8.col-6
+              .contact-info
+                ul.lists
+                  li
+                    i.material-icons 
+                    | 弼伽機械科技無錫有限公司
+                  li
+                    i.material-icons 
+                    | 中國江蘇省無錫市胡埭鎮工業區
+                  li
+                    i.material-icons 
+                    a(href='tel:+8651085581036')
+                      span(aria-hidden='true')
+                      | +86 510 85581036
+                  li
+                    a(href='mailto:suport@biguar.net', target='_blank')
+                      i.material-icons 
+                      | Biguar@test.com
+                .btn-wrap.py-3
+                  .row
+                    .col-md-8.col-12
+                      a(href='contact.html')
+                        button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') 聯絡我們

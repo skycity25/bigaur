@@ -1,0 +1,20 @@
+{
+  "name": "biggulp",
+  "description": "bigaur website",
+  "main": "index.jade",
+  "authors": [
+    "sky <skyc.ibiza@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}

@@ -1,0 +1,181 @@
+extends _layout.jade
+
+block header
+  //- - var page = {current: 'index_en.html' ,other: 'index.html', lang: 'en'}
+  - var current = 'index_en.html' 
+  - var other = 'index.html'
+  - var lang = 'en'
+  include partials/_header.jade
+
+block content
+  .page-english
+    // <Index輪播>
+    section.main-slider
+      .container-wide
+        #heroBanner.banner-wrapper
+          .item
+            a(href='#')
+              img(src='images/34.jpg', alt='')
+          .item
+            a(href='#')
+              img(src='images/04.jpg', alt='')
+          .item
+            a(href='#')
+              img(src='images/03.jpg', alt='')
+          .item
+            a(href='#')
+              img(src='images/02.jpg', alt='')
+          .item
+            a(href='#')
+              img(src='images/38.jpg', alt='')
+          .item
+            a(href='#')
+              img(src='images/50.jpg', alt='')
+    // <About>
+    section#homecompany.home-company
+      .container
+        .company-wrapper
+          hgroup.section-header
+            h2 Corporate Philosophy
+            h3 Aggressive / Pragmatic / Innovate / Cooperate
+          .spirit
+            ul.row
+              li.col-sm-4
+                .item
+                  .photo
+                    img.img-fluid(src='images/index_icon_new.svg', alt='')
+                  p Persistence of products innovation and development
+              li.col-sm-4
+                .item
+                  .photo
+                    img.img-fluid(src='images/index_icon_change.svg', alt='')
+                  p Keep ability to adapt and adjust to the market evolution 
+              li.col-sm-4
+                .item
+                  .photo
+                    img.img-fluid(src='images/index_icon_leader.svg', alt='')
+                  p Our insistence on becoming industry bellwether
+          .btn-wrap.py-3
+            .row
+              .col-md-4.col-8.mx-auto
+                a(href='about_en.html')
+                  button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') MORE
+    // <Product>
+    section#homemachine.home-machine
+      .container-wide
+        .machine-wrapper
+          .container
+            hgroup.section-header
+              img.logo(src='images/logo.png', alt='')
+              h2
+                .block.bh1
+                  span Think
+                  | outside the box
+                .block.bh2
+                  span Work
+                  | smart and efficient
+            .speacer
+              img.w-100(src='images/machine-speacer.png')
+          .machine-photo
+            img.img-fluid(src='images/machine3.png', alt='')
+      .triangle
+    section#homeproduct.home-product
+      .container
+        .product-wrapper
+          hgroup.section-header
+            h2 High Product Yield
+            h3 Help you to create more refined products
+          .end-products
+            img.item2(src='images/product.png', alt='')
+          .btn-wrap.py-3
+            .row
+              .col-md-4.col-8.mx-auto
+                a(href='product_en.html')
+                  button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') MORE
+    // <工藝介紹>
+    section#homeprocess.home-process
+      .container-wide
+        .process-wrapper
+          .process-intro
+            .process-box
+              hgroup.section-header
+                h2 Engineer Corner
+                h3 具備最專業的工藝系統
+              .process-text
+                p
+                  | “Quality is never an accident ; it is always the result of intelligent effort” John Ruskin
+                p
+                  | The success of a project usually determines whether the initial design is correct. Wrong design will lead to more time, manpower, material and financial resources.
+                p
+                  | Biguar has many years of successful experience, in order to help our customers complete process planning and design at the first place.
+              .btn-wrap.py-5
+                .row.justify-content-center.align-items-center
+                  .col-md-11.col-8.center-block
+                    a(href='process_en.html')
+                      button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') MORE
+          .slide-wrap
+            .block
+              ul.process-slider
+                li
+                  .item
+                    .figure
+                      img(src='images/process-item1.jpg', alt='')
+                    .text
+                      p 木漿處理系統
+                li
+                  .item
+                    .figure
+                      img(src='images/process-item2.jpg', alt='')
+                    .text
+                      p 廢紙處理系統
+                li
+                  .item
+                    .figure
+                      img(src='images/process-item3.jpg', alt='')
+                    .text
+                      p 廢紙分散處理系統
+                li
+                  .item
+                    .figure
+                      img(src='images/process-item4.jpg', alt='')
+                    .text
+                      p 廢紙脫墨處理系統
+                li
+                  .item
+                    .figure
+                      img(src='images/process-item5.jpg', alt='')
+                    .text
+                      p 造紙廠整廠輸出規劃
+    // <Contact>
+    section#homecontact.home-contact
+      .contact-wrapper
+        hgroup.section-header
+          h2 Contact us
+          h3 Power up your business with your best partner.
+        .container
+          .row.justify-content-center.align-items-center
+            .col-md-8.col-6
+              .contact-info
+                ul.lists
+                  li
+                    i.material-icons 
+                    | BIGUAR MACHINE
+                  li
+                    i.material-icons 
+                    | 中國江蘇省無錫市胡埭鎮工業區
+                  li
+                    i.material-icons 
+                    a(href='tel:+8651085581036')
+                      span(aria-hidden='true')
+                      | +86 510 85581036
+                  li
+                    a(href='mailto:suport@biguar.net', target='_blank')
+                      i.material-icons 
+                      | Biguar@test.com
+                .btn-wrap.py-3
+                  .row
+                    .col-md-8.col-12
+                      a(href='contact_en.html')
+                        button.btn.btn-danger.btn-lg.btn-block(type='button', name='button') Contact
+
+    
