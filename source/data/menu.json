@@ -54,7 +54,7 @@
       "submenu": false
     },{
       "name": "About",
-      "url": "about.html",
+      "url": "about_en.html",
       "submenu": [
          {"name": "Company", "url": "about_en.html"},
          {"name": "Philosophy", "url": "about_en.html#spirit-intro"},
@@ -62,7 +62,7 @@
       ]
     },{
       "name": "Products",
-      "url": "product.html",
+      "url": "product_en.html",
       "submenu": [
         {"name": "Stock Preparation", "url": "product_en.html"},
         {"name": "Pulp Molding Machine", "url": "product_en.html#product-second"},

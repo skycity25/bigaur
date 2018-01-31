@@ -190,4 +190,6 @@ jQuery(document).ready(function () {
     centerMode: true,
     focusOnSelect: true
   })
+
+  $('.lazy').Lazy()
 })

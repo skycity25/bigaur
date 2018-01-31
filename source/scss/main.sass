@@ -1,9 +1,6 @@
-// @import "functions"
-// @import "mixins"
 @import "helpers/variables"
 @import "helpers/mixin"
 @import "bootstrap"
-// @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css')
 
 %transition-set
   +transition( all 0.5s ease-in-out)
@@ -50,8 +47,7 @@ body
   color: $dark
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  font-family: -apple-system, BlinkMacSystemFont,'Noto Sans TC','Segoe UI', Roboto, 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif
-  // font-family: 'PingFang TC','ping-fang-tc-light','Open Sans', 'Helvetica Neue', Helvetica ,'Microsoft JhengHei','Noto Sans TC', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont,'Segoe UI', Roboto, 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif
   &.modal-open
     padding-right: 0px !important
 a
@@ -708,7 +704,7 @@ section#homemachine
     width: 1.5rem
     margin: unset
     display: inline
-    
+
 #heroBanner
   .slick-slide
     img
@@ -1747,3 +1743,11 @@ section#homeprocess
           height: 150px
     & + .fligth-item
       margin-top: 0.5rem
+
+.mm-panel.mm-hasnavbar
+  background: darken($primary,10%)
+  .mm-listview
+    > .item
+      &.active
+        background: $primary
+        color: #FFF
