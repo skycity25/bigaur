@@ -3,7 +3,7 @@
 @import "helpers/variables"
 @import "helpers/mixin"
 @import "bootstrap"
-@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css')
+// @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css')
 
 %transition-set
   +transition( all 0.5s ease-in-out)
@@ -687,8 +687,28 @@ section#homemachine
           +media-breakpoint-down(sm)
             max-width: 100%
 
+.tool-icon
+  width: 1rem
+  height: 1rem
+  display: inline-block
+  margin-right: 5px
+  position: relative
+  top: 2px
+  +background-size(100%)
+  background-repeat: no-repeat
+  &.mail
+    background-image: url("../images/icon_mail_alt_w.svg")
+  &.phone
+    background-image: url("../images/icon_phone.svg")
 
-
+.svg-icon
+  margin-right: 5px
+  width: 1rem
+  &.arrow
+    width: 1.5rem
+    margin: unset
+    display: inline
+    
 #heroBanner
   .slick-slide
     img
@@ -734,6 +754,7 @@ section#homemachine
         color: #a197ca
         &:hover
           color: #FFF
+
     .warp-item
       +media-breakpoint-down(sm)
         margin-bottom: 15px
@@ -1074,7 +1095,7 @@ section#homeprocess
                 +media-breakpoint-down(sm)
                   +font-size(18px)
                   padding-right: 0.25rem
-    .about,.spirit-intro,.technology,.Org-Chart,.contact-intro
+    .about,.technology,.Org-Chart,
       .section-header
         h3
           text-align: left
@@ -1093,8 +1114,12 @@ section#homeprocess
       color: #333
       text-align: center
     h3
-      text-align: justify
       font-weight: 500
+
+.about,.spirit-intro,.technology,.Org-Chart,
+  .section-header
+    h3
+      text-align: justify
 
 // Page about start
 .about-page
@@ -1125,6 +1150,15 @@ section#homeprocess
       padding: 2rem
       +media-breakpoint-down(sm)
         padding: 0
+      .col-lg-6
+        .p-3
+          .section-header
+            margin-top: 0px
+            +media-breakpoint-down(md)
+              margin-top: 50px
+
+
+
 
     // .container
     //   background-color: #ffffff
@@ -1189,6 +1223,9 @@ section#homeprocess
     div
       color: #ffffff
       padding-bottom: 1rem
+  .btn-wrap
+    +media-breakpoint-down(md)
+      margin-bottom: 1rem
   .slide-wrap
     .slick-slide
       padding: 0 0.5rem
@@ -1532,6 +1569,26 @@ section#homeprocess
     +media-breakpoint-down(sm)
       background-color: #ffffff
       width: 100%
+    .baidumap
+      border-radius: 10px
+      height: 560px
+      width: 100%
+      #allmap
+        width: 100%
+        height: 100%
+        overflow: hidden
+        margin: 0
+        font-family: "微软雅黑"
+      +media-breakpoint-down(sm)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        visibility: visible
+        display: unset
+
     .contact-wrapper
       +media-breakpoint-down(sm)
         height: unset
@@ -1690,12 +1747,3 @@ section#homeprocess
           height: 150px
     & + .fligth-item
       margin-top: 0.5rem
-.baidumap
-  width: 100%
-  height: 500px
-  #allmap
-    width: 100%
-    height: 100%
-    overflow: hidden
-    margin: 0
-    font-family: "微软雅黑"

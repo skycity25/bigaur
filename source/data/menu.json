@@ -42,7 +42,7 @@
       "url": "contact.html",
       "submenu": false,
       "company": "弼伽機械科技無錫有限公司",
-      "address": "中國江蘇省無錫市胡埭鎮工業區",
+      "address": "中國江蘇省無錫市濱湖區胡埭工業園區蓮桿路3號",
       "phone": "+86 510 85581036",
       "mail": "suport@biguar.net"
     }
@@ -57,31 +57,31 @@
       "url": "about.html",
       "submenu": [
          {"name": "Company", "url": "about_en.html"},
-         {"name": "Corporate Philosophy", "url": "about_en.html#spirit-intro"},
+         {"name": "Philosophy", "url": "about_en.html#spirit-intro"},
          {"name": "Ability", "url": "about_en.html#technology"}
       ]
     },{
       "name": "Products",
       "url": "product.html",
       "submenu": [
-        {"name": "Catalog", "url": "product_en.html"},
-        {"name": "紙塑成型機", "url": "product_en.html#product-second"},
-        {"name": "其他產品", "url": "product_en.html#otherproduct"},
+        {"name": "Stock Preparation", "url": "product_en.html"},
+        {"name": "Pulp Molding Machine", "url": "product_en.html#product-second"},
+        {"name": "Others", "url": "product_en.html#otherproduct"},
         {"name": "Customized", "url": "product_en.html#product-customized"}
       ]
     },{
-      "name": "工藝介紹",
+      "name": "Engineer Corner",
       "url": "process_en.html",
       "submenu": [
-        {"name": "A.紙塑廠備漿系統規劃", "url": "process_en.html"},
-        {"name": "B.造紙廠整廠輸出規劃", "url": "process_en.html#process-two"}
+        {"name": "A.Stock Preparation Equipment", "url": "process_en.html"},
+        {"name": "B.Paper Mill & Pulp Molding Factory Turnkey Solution", "url": "process_en.html#process-two"}
       ]
     },{
       "name": "Contact",
       "url": "contact_en.html",
       "submenu": false,
       "company": "BIGUAR MACHINE",
-      "address": "中國江蘇省無錫市胡埭鎮工業區",
+      "address": "No.3 Liangan Rd. Hudai Industrial Park, Wuxi, Jiangsu, China.",
       "phone": "+86 510 85581036",
       "mail": "suport@biguar.net"
     }
