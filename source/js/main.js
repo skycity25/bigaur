@@ -27,6 +27,7 @@ jQuery(document).ready(function () {
   $('.dropdown-hover').dropdownHover(100)
 
   $('#heroBanner').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     dots: true,
     infinite: true,
     speed: 500,
@@ -34,6 +35,7 @@ jQuery(document).ready(function () {
     autoplaySpeed: 2000
   })
   $('.process-slider').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
@@ -71,6 +73,7 @@ jQuery(document).ready(function () {
   })
 
   $('.process-slider-two').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -109,6 +112,7 @@ jQuery(document).ready(function () {
   })
 
   $('.one-time').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     dots: false,
     infinite: true,
     speed: 300,
@@ -120,6 +124,7 @@ jQuery(document).ready(function () {
   })
 
   $('.product-one-time').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     dots: true,
     arrows: false,
     infinite: true,
@@ -129,6 +134,7 @@ jQuery(document).ready(function () {
   })
 
   $('.papperproduct-one-time').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     dots: false,
     infinite: true,
     speed: 300,
@@ -142,6 +148,7 @@ jQuery(document).ready(function () {
   })
 
   $('.responsive').slick({
+    lazyLoad: 'ondemand', // lazyLoad
     autoplay: true,
     autoplaySpeed: 3500,
     dots: false,
